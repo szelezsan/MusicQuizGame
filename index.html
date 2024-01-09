@@ -2,23 +2,188 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Quiz Game</title>
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <button class ="btn" id="btn" type="submit" onclick="quiz()">Start Quiz Game.</button>
-    <h1 id="questions"></h1>
-    <h3 id="ans" style="display: none;">Ans:</h3>
-     <br>
-    <button id="btn2" type="submit" style="display: none;" onclick="evaluation()">Submit</button>
-    <h3 id="score" style="display: none;">Score: </h3>
-
+    <div class="quiz-container">
+        <h1>Multiple choice quiz</h1>
+        <hr>
+        <form id="quiz-form">
+            <div class="d-flex">
+                <div class="question">
+                    <p>1. What is the best selling album of all time from 1976 to 2018?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio", name="q1" value="a">
+                            Thriller
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="b">
+                            Back in Black
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="c">
+                            Abbey Road
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>2. Who is the lead singer of the British pop rock band Coldplay?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio", name="q1" value="a">
+                            Guy Berryman
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="b">
+                            Chris Martin
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="c">
+                           Will Champion
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>3. Who is the frontman of the band 30 Seconds to Mars?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio", name="q1" value="a">
+                            Gerard Way
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="b">
+                            Jared Leto
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="c">
+                           Mike Shinoda
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>4. The band Muse released their first album, Showbiz, in what year?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio", name="q1" value="a">
+                            1999
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="b">
+                            2001
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="c">
+                           2000
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>5.Which rap group released the album "Straight Outta Compton"?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio", name="q1" value="a">
+                            Beastie Boys
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="b">
+                            N.W.A.
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="c">
+                           Run-D.M.C.
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>6. "Some people call me the space cowboy" is the first line from what song?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio", name="q1" value="a">
+                            Fly Like an Eagle
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="b">
+                            Fandago
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="c">
+                           The Joker
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>7. Who was featured in the song "Words" by Feint? </p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio", name="q1" value="a">
+                            Veela
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="b">
+                            Laura Brehm
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="c">
+                           Anna Yvette
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>8. From which country did the song "Gangnam Style" originate from?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio", name="q1" value="a">
+                            South Korea
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="b">
+                            Japan
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="c">
+                           China
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>9. Which 80s band is fronted by singer/guitarist Robert Smith?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio", name="q1" value="a">
+                            The Smiths
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="b">
+                            New Order
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="c">
+                           The Cure
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>10. Which group performs the song "Crash into Me"?</p>
+                    <div class="answers">
+                        <label>
+                            <input type="radio", name="q1" value="a">
+                            Destiny's Child
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="b">
+                            Phish
+                        </label>
+                        <label>
+                            <input type="radio", name="q1" value="c">
+                           Dave Matthews Band
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
