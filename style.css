@@ -31,7 +31,7 @@ body.wrong {
     --hue:var(var(--hue-wrong));
 }
 
-.contaier {
+.container {
     width: 800px;
     max-width: 80%;
     background-color: white;
@@ -40,7 +40,7 @@ body.wrong {
     box-shadow: 0 0 10px 2 px;
 }
 
-btn {
+.btn {
     --hue:var(--hue-neutral);
     background-color: hsl(var(--hue) 100%, 50%);
 }
@@ -49,7 +49,7 @@ btn {
     --hue:var(--hue-correct);
 }
 
-btn.wrong {
+.btn.wrong {
     --hue:var(--hue-wrong);
 }
 
