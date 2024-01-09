@@ -33,5 +33,11 @@ h1 {
 }
 
 .asnwers label:not(:first-child) {
-    border-top: 1px solid #d74949;
+    border-top: 2px solid #e0e0e0;
+}
+
+label{
+    padding:10px 0;
+    display: block;
+    margin-bottom: 10px;
 }
