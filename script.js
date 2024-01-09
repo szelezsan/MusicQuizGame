@@ -8,8 +8,8 @@ quizfrom.addEventListener('submit, e=>'); {
 
     let score = 0;
     const.userAnswers =[quizfrom.q1.value,quizFrom.q2.value]
-    userAnswers.forEach(answer, index) => {
-        if(answer ==== correctAnswers[index]){
+    userAnswers.forEach(answer, index) ; {
+        if (answer === correctAnswers[index]){
         score += 1;
         }
     };

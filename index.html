@@ -9,15 +9,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <script scr="script.js"></script>
+    <script defer scr="script.js"></script>
 </head>
 <body>
-    <div class="quiz-container">
-        <h1>Multiple choice quiz</h1>
-        <hr>
-        <form id="quiz-form">
-            <div class="d-flex">
-                <div class="question">
+    <div class="container">
+        <div class="question-container">
                     <p>1. What is the best selling album of all time from 1976 to 2018?</p>
                     <div class="answers">
                         <label>
@@ -32,6 +28,10 @@
                             <input type="radio", name="q1" value="c">
                             Abbey Road
                         </label>
+                    </div>
+                    <div class="controls">
+                        <button id="start-btn" class=" "start-btn btn>Start</button>
+                        <button id="next-btn" class=" "next-btn btn hide>Next</button>
                     </div>
                 </div>
                 <div class="question">
