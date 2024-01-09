@@ -23,7 +23,7 @@ h1 {
 }
 
 .question {
-    width: 45%;
+    width: 80%;
     margin-bottom: 20px;
     background: #fff;
     padding: 20px;
@@ -42,3 +42,37 @@ label{
     display: block;
     margin-bottom: 10px;
 }
+
+input[type="radio"]{
+    margin-right: 10px;
+}
+
+.submit-btn {
+    display:block;
+    margin-bottom: 20px auto;
+    padding: 10px 20px;
+    background:rgb(240, 188, 160);
+    color: #fff;
+    border:none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.d-flex {
+    display:inline-block;
+    columns: 2;
+    column-width: 45%;
+    column-gap: normal;
+}
+
+.result {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top:20px;
+    padding: 10px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+}
+
