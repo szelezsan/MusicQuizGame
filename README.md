@@ -1,5 +1,15 @@
 # QuizGame
 
+
+
+
+
+
+
+
+
+
+
 Favicons: https://favicon.io/emoji-favicons/musical-note
 
 Q&A : https://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=multiple

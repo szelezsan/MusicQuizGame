@@ -1,3 +1,4 @@
+/* These setting apply to the whole screen */
 *::before, *::after {
     box-sizing: border-box;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -8,7 +9,6 @@
     --hue-neutral: 200;
     --hue-wrong: 0;
     --hue-correct: 145;
-
 }
 
 body {
@@ -50,11 +50,11 @@ body.wrong {
 
 .btn {
     --hue:var(--hue-neutral);
-    border: 1px solid hsl(var(--hue) 100%, 30%));
+    border: 1px solid hsl(var(--hue) 100%, 30%);
     background-color: hsl(var(--hue) 100%, 50%);
     border-radius: 5px;
     padding: 5px 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     outline: none;
 }
 
@@ -71,6 +71,7 @@ body.wrong {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
+    color: black;
 }
 
 .controls {
