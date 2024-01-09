@@ -1,0 +1,10 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(photo/singer.jpg);
+    background-size: cover;
+}
+
+.question {
+    font-weight: bold;
+    font-size: 20px;
+}
