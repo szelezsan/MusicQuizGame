@@ -40,4 +40,9 @@ body.wrong {
     box-shadow: 0 0 10px 2 px;
 }
 
+btn {
+    --hue:var(--hue-neutral);
+    background-color: hsl(var(--hue) 100%, 50%);
+}
+
 
