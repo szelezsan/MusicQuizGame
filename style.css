@@ -4,7 +4,34 @@ body {
     background-size: cover;
 }
 
-.question {
+.question:nth-child(odd) {
+    margin-right: 5%;
+}
+
+.question p {
     font-weight: bold;
-    font-size: 20px;
+}
+
+.quiz-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.question {
+    width: 45%;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+}
+
+.answers {
+    margin-bottom: 20px;
+}
+
+.asnwers label:not(:first-child) {
+    border-top: 1px solid #d74949;
 }
