@@ -9,7 +9,7 @@ const questions = [
         ]
     },
     {
-        question: 'Who is the lead singer of the British pop rock band Coldplaye from 1976 to 2018?',
+        question: 'Who is the lead singer of the British pop rock band Coldplay?',
         answers: [
             {text: 'Guy BerryMan', correct: false},
             {text: 'Chris Martin', correct: true},
