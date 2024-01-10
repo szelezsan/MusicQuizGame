@@ -78,7 +78,7 @@ function setStatusClass(element, correct) {
 }
 
 /* List of questions */
-const questions = [
+var questions = [
     {
         question: 'What is the best selling album of all time from 1976 to 2018',
         answers: [
