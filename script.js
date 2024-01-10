@@ -84,7 +84,7 @@ const questions = [
 
 /* Starting game */
 const startButton = document.getElementById('start-btn')
-const nextButton =document.getElementById('next-btn')
+const nextButton =document.getElementById('next-btn, btn, hide')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement= document.getElementById('answer-buttons')
@@ -95,7 +95,7 @@ let shuffledQuestions, currentQuestionIndex
 
 /* Starting game, by pressing Start button */
 startButton.addEventListener('click', startGame)
-nextButton.addEventListener('click', ()=>{
+nextButton.addEventListener('click', ()=> {
     currentQuestionIndex++
     setNextQuestion()
 })
@@ -125,9 +125,9 @@ function showQuestion(question) {
         if (answer.correct) {
             button.dataset.correct= answer.correct
     }
-        button.addEventListener('click', selectAnswer)
+       
         answerButtonsElement.appendChild(button)
-    })
+    });
 }
 
 function clearStatusClass(element) {
