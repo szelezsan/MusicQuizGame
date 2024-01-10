@@ -140,8 +140,7 @@ function resetState() {
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild){
         (answerButtonsElement.removeChild(answerButtonsElement.firstChild))
-}
-}
+}}
 
 function selectAnswer(e) {
     const selectedButton= e.target
@@ -165,5 +164,4 @@ function setStatusClass(element, correct) {
     } else {
         element.classList.add('wrong')
     }
-}
 }
