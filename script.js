@@ -2,7 +2,7 @@
 const questions = [
     {
         question: 'What is the best selling album of all time from 1976 to 2018?',
-        answers: [
+        answer: [
             {text: 'Thrillers', correct: true},
             {text: 'Back in Black', correct: false},
             {text: 'Abbey Road', correct: false}
@@ -10,7 +10,7 @@ const questions = [
     },
     {
         question: 'Who is the lead singer of the British pop rock band Coldplay?',
-        answers: [
+        answer: [
             {text: 'Guy BerryMan', correct: false},
             {text: 'Chris Martin', correct: true},
             {text: 'Will Champion', correct: false}
@@ -18,7 +18,7 @@ const questions = [
     },
     {
         question: 'Who is the frontman of the band 30 Seconds to Mars?',
-        answers: [
+        answer: [
             {text: 'Mike Shinoda', correct: false},
             {text: 'Gerard Way', correct: false},
             {text: 'Jared Leto', correct: true}
@@ -26,7 +26,7 @@ const questions = [
     },
     {
         question: 'The band Muse released their first album, Showbiz, in what year?',
-        answers: [
+        answer: [
             {text: '2001', correct: false},
             {text: '2002', correct: false},
             {text: '1999', correct: true}
@@ -34,7 +34,7 @@ const questions = [
     },
     {
         question: 'Which rap group released the album "Straight Outta Compton"?',
-        answers: [
+        answer: [
             {text: 'Beastie Boys', correct: false},
             {text: 'Run-D.M.C.', correct: false},
             {text: 'N.W.A', correct: true},
@@ -42,7 +42,7 @@ const questions = [
     },
     {
         question: '"Some people call me the space cowboy" is the first line from what song?',
-        answers: [
+        answer: [
             {text: 'Fly like an Eagle', correct: false},
             {text: 'The Joker', correct: true},
             {text: 'Fandago', correct: false}
@@ -58,7 +58,7 @@ const questions = [
     },
     {
         question: 'From which country did the song "Gangnam Style" originate from?',
-        answers: [
+        answer: [
             {text: 'South Korea', correct: true},
             {text: 'North Korea', correct: false},
             {text: 'China', correct: false}
@@ -66,7 +66,7 @@ const questions = [
     },
     {
         question: 'Which 80s band is fronted by singer/guitarist Robert Smith?',
-        answers: [
+        answer: [
             {text: 'New Order', correct: false},
             {text: 'The Cure', correct: true},
             {text: 'The Smiths', correct: false}
@@ -74,7 +74,7 @@ const questions = [
     },
     {
         question: 'Which group performs the song "Crash into Me"?',
-        answers: [
+        answer: [
             {text: 'Phish', correct: false},
             {text: 'The Greatful Dead', correct: false},
             {text: 'Dave Matthews Band', correct: true}
@@ -118,7 +118,7 @@ function setNextQuestion(){
 
 function showQuestion(question) {
     questionElement.innerText = question.question
-    question.answers.forEach(answer => {
+    question.answer.forEach(answer => {
         const button= document.createElement('button')
         button.innerText= answer.text
         button.classList.add('btn')
@@ -144,7 +144,7 @@ function resetState() {
 
 function selectAnswer(e) {
     const selectedButton= e.target
-    const correct=  selectedButton.dataset.correct
+    const correct= selectedButton.dataset.correct
     setStatus(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
