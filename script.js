@@ -1,7 +1,7 @@
 /* List of questions */
 const questions = [
     {
-        question: 'What is the best selling album of all time from 1976 to 2018',
+        question: 'What is the best selling album of all time from 1976 to 2018?',
         answers: [
             {text: 'Thrillers', correct: true},
             {text: 'Back in Black', correct: false},
@@ -9,7 +9,7 @@ const questions = [
         ]
     },
     {
-        question: 'Who is the lead singer of the British pop rock band Coldplaye from 1976 to 2018',
+        question: 'Who is the lead singer of the British pop rock band Coldplaye from 1976 to 2018?',
         answers: [
             {text: 'Guy BerryMan', correct: false},
             {text: 'Chris Martin', correct: true},
@@ -73,7 +73,7 @@ const questions = [
         ]
     },
     {
-        question: 'Which group performs the song "Crash into Me"',
+        question: 'Which group performs the song "Crash into Me"?',
         answers: [
             {text: 'Phish', correct: false},
             {text: 'The Greatful Dead', correct: false},
