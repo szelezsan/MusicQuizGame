@@ -34,6 +34,8 @@ body.wrong {
 .container {
     width: 700px;
     max-width: 70%;
+    height: 500px;
+    max-height: 70%;
     background-color: rgb(218, 190, 219);
     border-radius: 5px;
     padding: 10px;
