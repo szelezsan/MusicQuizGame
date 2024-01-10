@@ -164,4 +164,4 @@ function setStatusClass(element, correct) {
     } else {
         element.classList.add('wrong')
     }
-}
+}}
