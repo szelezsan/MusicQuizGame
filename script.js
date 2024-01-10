@@ -9,6 +9,7 @@ const answerButtonsElement= document.getElementById('answer-buttons')
 /* Shuffling question, so they will be presented in different orders each time */
 let shuffledQuestions, currentQuestionIndex
 
+/* Starting game, by pressing Start button */
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', ()=> {
     currentQuestionIndex++
