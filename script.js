@@ -35,7 +35,7 @@ function setNextQuestion(){
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
-        const button= dosument.createElement('button')
+        const button= document.createElement('button')
         button.innerText= answer.text
         button.classList.add('btn')
         if (answer.correct) {
@@ -54,13 +54,13 @@ function resetState() {
 }
 
 function selectAnswer(){
-    const selectButton= e.target
+    const selectedButton= e.target
     const correct=  selectedButton.dataset.correct
     setStatus(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    if (shuffledQuestions.lenght > currentQuestionIndex +1) {
+    if (shuffledQuestions.length > currentQuestionIndex +1) {
         nextButton.classList.remove('hide')
     } else {
         startButton.innerText= 'Restart'
@@ -78,7 +78,7 @@ function setStatusClass(element, correct) {
 }
 
 /* List of questions */
-var questions = [
+const questions = [
     {
         question: 'What is the best selling album of all time from 1976 to 2018',
         answers: [
