@@ -50,7 +50,7 @@ const questions = [
     },
     {
         question: 'Who was featured in the song "Words" by Feint?',
-        answers: [
+        answer: [
             {text: 'Anna Yvette', correct: false},
             {text: 'Veela', correct: false},
             {text: 'Laura Brehm', correct: true}
@@ -83,7 +83,7 @@ const questions = [
 ]
 
 /* Starting game */
-var startButton = document.getElementById('start-btn')
+const startButton = document.getElementById('start-btn')
 const nextButton =document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
@@ -148,12 +148,12 @@ function selectAnswer(e) {
     setStatus(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
-    });
+    })
     if (shuffledQuestions.length > currentQuestionIndex +1) {
-        nextButton.classList.remove('hide');
+        nextButton.classList.remove('hide')
     } else {
         startButton.innerText= 'Restart';
-        startButton.classList.remove('hide');
+        startButton.classList.remove('hide')
     }
 }
 
