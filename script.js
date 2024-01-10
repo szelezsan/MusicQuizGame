@@ -141,6 +141,7 @@ function resetState() {
     while (answerButtonsElement.firstChild){
         (answerButtonsElement.removeChild(answerButtonsElement.firstChild))
 }
+}
 
 function selectAnswer(e) {
     const selectedButton= e.target
