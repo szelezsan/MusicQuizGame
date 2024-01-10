@@ -95,7 +95,7 @@ let shuffledQuestions, currentQuestionIndex
 
 /* Starting game, by pressing Start button */
 startButton.addEventListener('click', startGame)
-nextButton.addEventListener('click', ()=> {
+nextButton.addEventListener('click', ()=>{
     currentQuestionIndex++
     setNextQuestion()
 })
@@ -125,7 +125,7 @@ function showQuestion(question) {
         if (answer.correct) {
             button.dataset.correct= answer.correct
     }
-        button.addEventListener('click', selectAnswer)
+        button.addEventListener('click', answer)
         answerButtonsElement.appendChild(button)
     })
 }
