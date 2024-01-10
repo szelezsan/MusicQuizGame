@@ -85,5 +85,77 @@ const questions = [
             {text: 'Back in Black', correct: false},
             {text: 'Abbey Road', correct: false}
         ]
-    }
+    },
+    {
+        question: 'What is the best selling album of all time from 1976 to 2018',
+        answers: [
+            {text: 'Thrillers', correct: true},
+            {text: 'Back in Black', correct: false},
+            {text: 'Abbey Road', correct: false}
+        ]
+    },
+    {
+        question: 'What is the best selling album of all time from 1976 to 2018',
+        answers: [
+            {text: 'Thrillers', correct: true},
+            {text: 'Back in Black', correct: false},
+            {text: 'Abbey Road', correct: false}
+        ]
+    },
+    {
+        question: 'What is the best selling album of all time from 1976 to 2018',
+        answers: [
+            {text: 'Thrillers', correct: true},
+            {text: 'Back in Black', correct: false},
+            {text: 'Abbey Road', correct: false}
+        ]
+    },
+    {
+        question: 'What is the best selling album of all time from 1976 to 2018',
+        answers: [
+            {text: 'Thrillers', correct: true},
+            {text: 'Back in Black', correct: false},
+            {text: 'Abbey Road', correct: false}
+        ]
+    },
+    {
+        question: 'What is the best selling album of all time from 1976 to 2018',
+        answers: [
+            {text: 'Thrillers', correct: true},
+            {text: 'Back in Black', correct: false},
+            {text: 'Abbey Road', correct: false}
+        ]
+    },
+    {
+        question: 'What is the best selling album of all time from 1976 to 2018',
+        answers: [
+            {text: 'Thrillers', correct: true},
+            {text: 'Back in Black', correct: false},
+            {text: 'Abbey Road', correct: false}
+        ]
+    },
+    {
+        question: 'What is the best selling album of all time from 1976 to 2018',
+        answers: [
+            {text: 'Thrillers', correct: true},
+            {text: 'Back in Black', correct: false},
+            {text: 'Abbey Road', correct: false}
+        ]
+    },
+    {
+        question: 'What is the best selling album of all time from 1976 to 2018',
+        answers: [
+            {text: 'Thrillers', correct: true},
+            {text: 'Back in Black', correct: false},
+            {text: 'Abbey Road', correct: false}
+        ]
+    },
+    {
+        question: 'What is the best selling album of all time from 1976 to 2018',
+        answers: [
+            {text: 'Thrillers', correct: true},
+            {text: 'Back in Black', correct: false},
+            {text: 'Abbey Road', correct: false}
+        ]
+    },
 ]}
