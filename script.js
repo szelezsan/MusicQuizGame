@@ -16,6 +16,7 @@ nextButton.addEventListener('click', ()=> {
 })
 
 function startGame(){
+    /* Hiding Start button after starting the game */
     startButton.classList.add('hide')
     /*Shuffling questions in random orders*/
     shuffledQuestions = questions.sort(() => Math.random()- .5)
