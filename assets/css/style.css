@@ -34,27 +34,28 @@ body.wrong {
 
 
 .container {
-    width: 700px;
+    width: 90vw;
     max-width: 70%;
-    height: 300px;
+    height: 60vh;
     max-height: 70%;
     background-color: rgb(218, 190, 219);
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 20px  10px;
     color: rgb(0, 0, 0);
+    justify-content: center;
 }
 
 header {
     font-family:'Titan One', sans-serif;
-    font-size: 40px;
+    font-size: 6vw;
     text-align: center;
     color:rgb(0, 0, 0)
 }
 
 .question {
     font-family: 'Playfair Display', serif;
-    font-size: 25px;
+    font-size: 3vw;
     text-align: center;
     padding:  20px;
 }
@@ -70,10 +71,13 @@ header {
 
 .btn {
     background:hsl(var(--hue), 90%, 10%);
-    border-radius: 5px;
-    padding: 10px 20px;
+    border-radius: 1vh;
+    padding: 2vw;
+    padding-bottom: 2vh;
     color: rgb(255, 255, 255);
     outline: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 2vw;
 }
 
 .btn.correct {
@@ -86,11 +90,16 @@ header {
 }
 
 .start-btn, .next-btn {
-    font-size: 4rem;
-    font-weight: bold;
-    padding: 10px 20px;
-    color: black;
-    
+    background:hsl(var(--hue), 90%, 10%);
+    border-radius: 2vh;
+    margin-top: 3vh;
+    padding: 2vw;
+    color: rgb(255, 255, 255);
+    outline: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 2vw;
+    justify-content:center;
+    padding-bottom: 2vh;
 }
 
 .controls {
