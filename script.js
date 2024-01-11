@@ -131,7 +131,7 @@ function showQuestion(question) {
         if (answer.correct) {
             button.dataset.correct= answer.correct
     }
-       
+    
         answerButtonsElement.appendChild(button)
     });
 }
@@ -157,6 +157,8 @@ function selectAnswer(e) {
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
+
+    button.addEventListener('click', selectAnswer)
 
     if (shuffledQuestions.length > currentQuestionIndex +1) {
         nextButton.classList.remove('hide')
