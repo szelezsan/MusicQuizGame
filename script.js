@@ -84,14 +84,15 @@ const questions = [
 
 /* Starting game */
 const startButton = document.getElementById('start-btn')
-const nextButton =document.getElementById('next-btn, btn, hide')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement= document.getElementById('answer-buttons')
+const nextButton =document.getElementById('next-btn')
 
 
 /* Shuffling question, so they will be presented in different orders each time */
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions 
+let currentQuestionIndex
 
 /* Starting game, by pressing Start button */
 startButton.addEventListener('click', startGame)
@@ -99,6 +100,8 @@ nextButton.addEventListener('click', ()=> {
     currentQuestionIndex++
     setNextQuestion()
 })
+
+
 
 function startGame(){
     /* Hiding Start button after starting the game */

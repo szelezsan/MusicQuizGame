@@ -1,9 +1,8 @@
 /* These setting apply to the whole screen */
 *::before, *::after {
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
 }
+
 /* Color changing background */
 :root {
     --hue-neutral: 300;
@@ -13,6 +12,7 @@
 
 body {
     --hue: var(--hue-neutral);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0;
     margin: 0;
     display: flex;
@@ -31,30 +31,47 @@ body.wrong {
     --hue:var(var(--hue-wrong));
 }
 
+
+
 .container {
     width: 700px;
     max-width: 70%;
-    height: 500px;
+    height: 300px;
     max-height: 70%;
     background-color: rgb(218, 190, 219);
     border-radius: 5px;
     padding: 10px;
-    box-shadow: 0 0 10px 2 px;
-    color: black;
+    box-shadow: 0 0 20px  10px;
+    color: rgb(0, 0, 0);
+}
+
+header {
+    font-family:'Titan One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color:rgb(0, 0, 0)
+}
+
+.question {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    text-align: center;
+    padding:  20px;
 }
 
 .btn-grid {
-    display: grid;
+    display:flex;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin: 20px, 0;
+    justify-content: center;
 }
 
 
 .btn {
     background:hsl(var(--hue), 90%, 10%);
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 10px 20px;
     color: rgb(255, 255, 255);
     outline: none;
 }
@@ -69,7 +86,7 @@ body.wrong {
 }
 
 .start-btn, .next-btn {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bold;
     padding: 10px 20px;
     color: black;
