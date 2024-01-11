@@ -119,12 +119,15 @@ function setNextQuestion(){
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
+
 function showQuestion(question) {
     questionElement.innerText = question.question
+
     question.answer.forEach(answer => {
         const button= document.createElement('button')
         button.innerText= answer.text
         button.classList.add('btn')
+
         if (answer.correct) {
             button.dataset.correct= answer.correct
     }
@@ -141,17 +144,20 @@ function clearStatusClass(element) {
 function resetState() {
     clearStatusClass(document.body)
     nextButton.classList.add('hide')
+
     while (answerButtonsElement.firstChild){
-        (answerButtonsElement.removeChild(answerButtonsElement.firstChild))
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
 }
 
 function selectAnswer(e) {
     const selectedButton= e.target
     const correct= selectedButton.dataset.correct
-    setStatus(document.body, correct)
+    setStatus(answerButtonsElement, correct)
+
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
+
     if (shuffledQuestions.length > currentQuestionIndex +1) {
         nextButton.classList.remove('hide')
     } else {
