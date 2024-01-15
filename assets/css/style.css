@@ -24,11 +24,11 @@ body {
 }
 
 body.correct {
-    --hue:var(var(--hue-correct));
+    --hue-correct: 145;
 }
 
 body.wrong {
-    --hue:var(var(--hue-wrong));
+    --hue-wrong: 0;
 }
 
 
@@ -64,7 +64,7 @@ header {
     display:flex;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
-    margin: 20px, 0;
+    margin: 20px 0;
     justify-content: center;
 }
 

@@ -1,3 +1,12 @@
+function setStatusClass(element, correct) {
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
+}
+
 /* List of questions */
 const questions = [
     {
@@ -84,10 +93,11 @@ const questions = [
 
 /* Starting game */
 const startButton = document.getElementById('start-btn')
+const nextButton =document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement= document.getElementById('answer-buttons')
-const nextButton =document.getElementById('next-btn')
+
 
 
 /* Shuffling question, so they will be presented in different orders each time */
@@ -101,15 +111,13 @@ nextButton.addEventListener('click', ()=> {
     setNextQuestion()
 })
 
-
-
 function startGame(){
     /* Hiding Start button after starting the game */
     startButton.classList.add('hide')
     /*Shuffling questions in random orders*/
     shuffledQuestions = questions.sort(() => Math.random()- .5)
     currentQuestionIndex= 0
-    questionContainerElement.classList.remove('hide')
+    questionContainerElement.classList.add('hide')
     /* Setting up showing next question */
     setNextQuestion()
 }
@@ -143,8 +151,6 @@ function clearStatusClass(element) {
 
 function resetState() {
     clearStatusClass(document.body)
-    nextButton.classList.add('hide')
-
     while (answerButtonsElement.firstChild){
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
 }
@@ -154,10 +160,6 @@ function selectAnswer(e) {
     const correct= selectedButton.dataset.correct
     setStatus(answerButtonsElement, correct)
 
-    Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })
-
     button.addEventListener('click', selectAnswer)
 
     if (shuffledQuestions.length > currentQuestionIndex +1) {
@@ -165,14 +167,5 @@ function selectAnswer(e) {
     } else {
         startButton.innerText= 'Restart';
         startButton.classList.remove('hide')
-    }
-}
-
-function setStatusClass(element, correct) {
-    clearStatusClass(element)
-    if (correct) {
-        element.classList.add('correct')
-    } else {
-        element.classList.add('wrong')
     }
 }}
