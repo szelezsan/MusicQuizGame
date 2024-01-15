@@ -1,11 +1,4 @@
-function setStatusClass(element, correct) {
-    clearStatusClass(element)
-    if (correct) {
-        element.classList.add('correct')
-    } else {
-        element.classList.add('wrong')
-    }
-}
+
 
 /* List of questions */
 const questions = [
@@ -117,7 +110,7 @@ function startGame(){
     /*Shuffling questions in random orders*/
     shuffledQuestions = questions.sort(() => Math.random()- .5)
     currentQuestionIndex= 0
-    questionContainerElement.classList.add('hide')
+    questionContainerElement.classList.remove('hide')
     /* Setting up showing next question */
     setNextQuestion()
 }
