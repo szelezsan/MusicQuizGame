@@ -61,8 +61,7 @@ header {
 }
 
 .btn-grid {
-    display: block;
-    grid-template-columns: repeat(2, auto);
+    display:inline-block;
     gap: 10px;
     margin: 20px 0;
     justify-content: center;

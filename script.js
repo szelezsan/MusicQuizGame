@@ -79,20 +79,24 @@ function startGame(){
     startButton.classList.add("hide");
     questionContainer.classList.remove("hide");
     currentQuestionIndex= 0;
-    answeeCorrect = 0;
+    correctAnswer = 0;
     setNextQuestion()
 }
 
 function setNextQuestion(){
     resetState();
     showQuestion(questions[currentQuestionIndex]);
+ 
+    if (currentQuestionIndex === question.length -1) {
+    nextButton.innerText ="Finish"
+    }
 }
 
 
 function showQuestion(question) {
     questionElement.innerText = question.question;
 
-    question.answer.forEach((answer, index ) => {
+    question.answers.forEach((answer, index ) => {
         const button= document.createElement('button');
         button.innerText= answer;
         button.classList.add('btn');
@@ -108,10 +112,9 @@ function clearStatusClass(element) {
 }
 
 function resetState() {
-    nextButton.classList.add("hide")
     while (answerButtonsElement.firstChild){
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
-    
+    }
 }
 
 function selectAnswer(e) {
@@ -119,13 +122,15 @@ function selectAnswer(e) {
     const selectedAnswer= Array.from(answerButtonsElement.children).indexOf(selectedButton);
 
     const question= questions[currentQuestionIndex];
-    if (selectAnswer ===question.correctAnswer) {
+    if (selectedAnswer ===question.correctAnswer) {
         selectedButton.classList.add("correct");
         answerCorrect++;
     }else {
         selectedButton.classList.add('wrong');
     }
-}}
+
+    nextButton.classList.remove("hide");
+}
 
 Array.from(answerButtonsElement.children).forEach((button) =>{
     button.disabled =true;
@@ -136,13 +141,8 @@ Array.from(answerButtonsElement.children).forEach((button) =>{
     }
 });
 
-if (currentQuestionIndex === questions.lenght - 1) {
+if (currentQuestionIndex === questions.length - 1) {
     nextButton.innerText = "Finish";
-}
-
-if (currentQuestionIndex === -1) {
-    nextButton.innerText = "Finish";
-    nextButton.classList.remove('hide');
 } else {
     nextButton.classList.remove('hide');
 }
