@@ -4,136 +4,101 @@
 const questions = [
     {
         question: 'What is the best selling album of all time from 1976 to 2018?',
-        answer: [
-            {text: 'Thrillers', correct: true},
-            {text: 'Back in Black', correct: false},
-            {text: 'Abbey Road', correct: false}
-        ]
+        answers: ['Thrillers', 'Back in Black', 'Abbey Road'],
+        correctAnswer: 0
     },
     {
         question: 'Who is the lead singer of the British pop rock band Coldplay?',
-        answer: [
-            {text: 'Guy BerryMan', correct: false},
-            {text: 'Chris Martin', correct: true},
-            {text: 'Will Champion', correct: false}
-        ]
+        answers: ['Guy BerryMan', 'Chris Martin', 'Will Champion'],
+        correctAnswer: 1
     },
     {
         question: 'Who is the frontman of the band 30 Seconds to Mars?',
-        answer: [
-            {text: 'Mike Shinoda', correct: false},
-            {text: 'Gerard Way', correct: false},
-            {text: 'Jared Leto', correct: true}
-        ]
+        answers: ['Mike Shinoda', 'Gerard Way', 'Jared Leto'],
+        correctAnswer: 2
     },
     {
         question: 'The band Muse released their first album, Showbiz, in what year?',
-        answer: [
-            {text: '2001', correct: false},
-            {text: '2002', correct: false},
-            {text: '1999', correct: true}
-        ]
+        answers: ['2001', '2002', '1999'],
+        correctAnswer: 2
     },
     {
         question: 'Which rap group released the album "Straight Outta Compton"?',
-        answer: [
-            {text: 'Beastie Boys', correct: false},
-            {text: 'Run-D.M.C.', correct: false},
-            {text: 'N.W.A', correct: true},
-        ]
+        answers: ['Beastie Boys', 'Run-D.M.C.', 'N.W.A'],
+        correctAnswer: 2
     },
     {
         question: '"Some people call me the space cowboy" is the first line from what song?',
-        answer: [
-            {text: 'Fly like an Eagle', correct: false},
-            {text: 'The Joker', correct: true},
-            {text: 'Fandago', correct: false}
-        ]
+        answers: ['Fly like an Eagle', 'The Joker', 'Fandago'],
+        correctAnswer:1
     },
     {
         question: 'Who was featured in the song "Words" by Feint?',
-        answer: [
-            {text: 'Anna Yvette', correct: false},
-            {text: 'Veela', correct: false},
-            {text: 'Laura Brehm', correct: true}
-        ]
+        answers: ['Anna Yvette', 'Veela', 'Laura Brehm'],
+        correctAnswer: 2
     },
     {
         question: 'From which country did the song "Gangnam Style" originate from?',
-        answer: [
-            {text: 'South Korea', correct: true},
-            {text: 'North Korea', correct: false},
-            {text: 'China', correct: false}
-        ]
+        answers: ['South Korea', 'North Korea', 'China'],
+        correctAnswer:1
     },
     {
         question: 'Which 80s band is fronted by singer/guitarist Robert Smith?',
-        answer: [
-            {text: 'New Order', correct: false},
-            {text: 'The Cure', correct: true},
-            {text: 'The Smiths', correct: false}
-        ]
+        answers: ['New Order', 'The Cure', 'The Smiths'],
+        correctAnswer: 1
     },
     {
         question: 'Which group performs the song "Crash into Me"?',
-        answer: [
-            {text: 'Phish', correct: false},
-            {text: 'The Greatful Dead', correct: false},
-            {text: 'Dave Matthews Band', correct: true}
-        ]
+        answers: ['Phish', 'The Greatful Dead', 'Dave Matthews Band'],
+        correctAnswer:2
     },
 ]
 
 /* Starting game */
-const startButton = document.getElementById('start-btn')
-const nextButton =document.getElementById('next-btn')
-const questionContainerElement = document.getElementById('question-container')
-const questionElement = document.getElementById('question')
-const answerButtonsElement= document.getElementById('answer-buttons')
+const startButton = document.getElementById('start-btn');
+const nextButton =document.getElementById('next-btn');
+const questionContainer= document.getElementById('question-container');
+const questionElement = document.getElementById('question');
+const answerButtonsElement= document.getElementById('answer-buttons');
 
 
 
 /* Shuffling question, so they will be presented in different orders each time */
-let shuffledQuestions 
-let currentQuestionIndex
+let currentQuestionIndex;
+let correctAnswer;
 
 /* Starting game, by pressing Start button */
-startButton.addEventListener('click', startGame)
-nextButton.addEventListener('click', ()=> {
-    currentQuestionIndex++
-    setNextQuestion()
+startButton.addEventListener('click', startGame);
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++;
+    setNextQuestion();
 })
 
 function startGame(){
     /* Hiding Start button after starting the game */
-    startButton.classList.add('hide')
-    /*Shuffling questions in random orders*/
-    shuffledQuestions = questions.sort(() => Math.random()- .5)
-    currentQuestionIndex= 0
-    questionContainerElement.classList.remove('hide')
-    /* Setting up showing next question */
+    startButton.classList.add("hide");
+    questionContainer.classList.remove("hide");
+    currentQuestionIndex= 0;
+    answeeCorrect = 0;
     setNextQuestion()
 }
 
 function setNextQuestion(){
-    resetState()
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    resetState();
+    showQuestion(questions[currentQuestionIndex]);
 }
 
 
 function showQuestion(question) {
-    questionElement.innerText = question.question
+    questionElement.innerText = question.question;
 
-    question.answer.forEach(answer => {
-        const button= document.createElement('button')
-        button.innerText= answer.text
-        button.classList.add('btn')
+    question.answer.forEach((answer, index ) => {
+        const button= document.createElement('button');
+        button.innerText= answer;
+        button.classList.add('btn');
 
-        if (answer.correct) {
-            button.dataset.correct= answer.correct
-    }
-    
-        answerButtonsElement.appendChild(button)
+        button.addEventListener("click", selectAnswer);
+        answerButtonsElement.appendChild(button);
     });
 }
 
@@ -143,22 +108,41 @@ function clearStatusClass(element) {
 }
 
 function resetState() {
-    clearStatusClass(document.body)
+    nextButton.classList.add("hide")
     while (answerButtonsElement.firstChild){
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+    
 }
 
 function selectAnswer(e) {
     const selectedButton= e.target
-    const correct= selectedButton.dataset.correct
-    setStatus(answerButtonsElement, correct)
+    const selectedAnswer= Array.from(answerButtonsElement.children).indexOf(selectedButton);
 
-    button.addEventListener('click', selectAnswer)
-
-    if (shuffledQuestions.length > currentQuestionIndex +1) {
-        nextButton.classList.remove('hide')
-    } else {
-        startButton.innerText= 'Restart';
-        startButton.classList.remove('hide')
+    const question= questions[currentQuestionIndex];
+    if (selectAnswer ===question.correctAnswer) {
+        selectedButton.classList.add("correct");
+        answerCorrect++;
+    }else {
+        selectedButton.classList.add('wrong');
     }
 }}
+
+Array.from(answerButtonsElement.children).forEach((button) =>{
+    button.disabled =true;
+    if (button.classList.contains('correct')){
+        button.style.backgroundColor = "green";
+    } else {
+        button.style.backgroundColor = 'red';
+    }
+});
+
+if (currentQuestionIndex === questions.lenght - 1) {
+    nextButton.innerText = "Finish";
+}
+
+if (currentQuestionIndex === -1) {
+    nextButton.innerText = "Finish";
+    nextButton.classList.remove('hide');
+} else {
+    nextButton.classList.remove('hide');
+}

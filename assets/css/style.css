@@ -1,4 +1,4 @@
-/* These setting apply to the whole screen */
+/* Setting apply to the whole screen */
 *::before, *::after {
     box-sizing: border-box;
 }
@@ -24,11 +24,11 @@ body {
 }
 
 body.correct {
-    --hue-correct: 145;
+    --hue:var(--hue-correct);
 }
 
 body.wrong {
-    --hue-wrong: 0;
+    --hue:var(--hue-wrong);
 }
 
 
@@ -37,7 +37,7 @@ body.wrong {
     width: 90vw;
     max-width: 70%;
     height: 60vh;
-    max-height: 70%;
+    max-height: 50%;
     background-color: rgb(218, 190, 219);
     border-radius: 5px;
     padding: 10px;
@@ -61,7 +61,7 @@ header {
 }
 
 .btn-grid {
-    display:flex;
+    display: block;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin: 20px 0;
@@ -80,13 +80,22 @@ header {
     font-size: 2vw;
 }
 
-.btn.correct {
-    --hue:var(--hue-correct);
-    color:black;
+.correct {
+    background-color: green;
 }
 
-.btn.wrong {
-    --hue:var(--hue-wrong);
+.wrong {
+    background-color: red;
+}
+
+.start-btn {
+    display: block;
+    margin: 20px auto;
+}
+
+.next-btn {
+    display: none;
+    margin: 20px auto;
 }
 
 .start-btn, .next-btn {
@@ -102,6 +111,7 @@ header {
     padding-bottom: 2vh;
 }
 
+
 .controls {
     display:flex;
     justify-content: center;
@@ -110,5 +120,10 @@ header {
 }
 
 .hide {
-    display: none;
+    display: none !important;
+}
+
+.btn {
+    display: block;
+    margin: 10px auto;
 }
