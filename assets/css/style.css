@@ -130,27 +130,43 @@ header {
     margin: 10px auto;
 }
 
-@media screen and (min-width: 400px){
+/* Mobile styling */
+@media screen and (min-width:300px) and (max-width:600px) {
     .container{
         height: 90vh;
         max-height: 60%;
     }
 
     .question {
-        font-size: 4vw;
+        font-size: 3vw;
+        padding-bottom:5px;
+
     }
 
     .btn-grid {
         display: inline-block;
         justify-content:center;
-        margin: 30vw;
+        margin: 10vw 5vw 5vw 20vw;
+        text-align: center;
+    }
+
+    .start-btn .next-btn {
+        font-size: 5vw;
+        display: inline-block;
+        justify-content:space-evenly;
+        padding: 3vw;
     }
 
     .btn {
-        display: block;
-        margin: 5px auto;
+        display: inline-block;
         font-size: 2vh;
-        justify-content: center;
+        justify-content: space-evenly;
+        padding: 3vw;
     }
     
+    header {
+        padding-bottom: 0;
+        font-size: 50px;
+    }
 }
+

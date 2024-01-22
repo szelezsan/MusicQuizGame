@@ -77,6 +77,9 @@ nextButton.addEventListener('click', () => {
 function startGame(){
     /* Hiding Start button after starting the game */
     startButton.classList.add("hide");
+
+    nextButton.classList.add('hide')
+    
     questionContainer.classList.remove("hide");
     currentQuestionIndex= 0;
     correctAnswer = 0;
@@ -129,21 +132,19 @@ function selectAnswer(e) {
     if (selectedAnswer ===question.correctAnswer) {
         selectedButton.classList.add("correct");
         correctAnswer++;
-        
+        nextButton.classList.remove("hide");
     }else {
         selectedButton.classList.add('wrong');
+        nextButton.classList.add('hide');
     }
-
-    console.log("Slected Answer:", selectAnswer)
-
-    nextButton.classList.remove("hide");
-
-    console.log("Next button should be visibel");
 }
 
-console.log("Selected Answer:", selectAnswer);
-nextButton.classList.remove("hide");
-console.log("Next button should be visible");
+if (currentQuestionIndex === question.length -1) {
+    nextButton.innerText = "Finish";
+} else {
+    nextButton.classList.remove('hide');
+}
+
 
 Array.from(answerButtonsElement.children).forEach((button) =>{
     button.disabled =true;
@@ -153,9 +154,3 @@ Array.from(answerButtonsElement.children).forEach((button) =>{
         button.style.backgroundColor = 'red';
     }
 });
-
-if (currentQuestionIndex === questions.length -1) {
-    nextButton.innerText = "Finish";
-} else {
-    nextButton.classList.remove('hide');
-}
