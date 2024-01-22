@@ -56,7 +56,7 @@ const questions = [
 
 /* Starting game */
 const startButton = document.getElementById('start-btn');
-const nextButton =document.getElementById('next-btn');
+const nextButton =document.getElementById('next-btn'); 
 const questionContainer= document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement= document.getElementById('answer-buttons');
@@ -80,14 +80,18 @@ function startGame(){
     questionContainer.classList.remove("hide");
     currentQuestionIndex= 0;
     correctAnswer = 0;
-    setNextQuestion()
+    setNextQuestion();
 }
 
 function setNextQuestion(){
+    
     resetState();
     showQuestion(questions[currentQuestionIndex]);
+
+    console.log("Current Index:", currentQuestionIndex);
  
     if (currentQuestionIndex === question.length -1) {
+        console.log("Show 'Finish button'")
     nextButton.innerText ="Finish"
     }
 }
@@ -124,13 +128,22 @@ function selectAnswer(e) {
     const question= questions[currentQuestionIndex];
     if (selectedAnswer ===question.correctAnswer) {
         selectedButton.classList.add("correct");
-        answerCorrect++;
+        correctAnswer++;
+        
     }else {
         selectedButton.classList.add('wrong');
     }
 
+    console.log("Slected Answer:", selectAnswer)
+
     nextButton.classList.remove("hide");
+
+    console.log("Next button should be visibel");
 }
+
+console.log("Selected Answer:", selectAnswer);
+nextButton.classList.remove("hide");
+console.log("Next button should be visible");
 
 Array.from(answerButtonsElement.children).forEach((button) =>{
     button.disabled =true;
@@ -141,7 +154,7 @@ Array.from(answerButtonsElement.children).forEach((button) =>{
     }
 });
 
-if (currentQuestionIndex === questions.length - 1) {
+if (currentQuestionIndex === questions.length -1) {
     nextButton.innerText = "Finish";
 } else {
     nextButton.classList.remove('hide');

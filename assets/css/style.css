@@ -5,7 +5,7 @@
 
 /* Color changing background */
 :root {
-    --hue-neutral: 300;
+    --hue-neutral: 900;
     --hue-wrong: 0;
     --hue-correct: 145;
 }
@@ -36,12 +36,12 @@ body.wrong {
 .container {
     width: 90vw;
     max-width: 70%;
-    height: 60vh;
-    max-height: 50%;
-    background-color: rgb(218, 190, 219);
+    height: 90vh;
+    max-height: 60%;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     padding: 10px;
-    box-shadow: 0 0 20px  10px;
+    box-shadow: 0 0 30px  0px;
     color: rgb(0, 0, 0);
     justify-content: center;
 }
@@ -50,18 +50,18 @@ header {
     font-family:'Titan One', sans-serif;
     font-size: 6vw;
     text-align: center;
-    color:rgb(0, 0, 0)
+    color:rgb(41, 71, 65)
 }
 
 .question {
     font-family: 'Playfair Display', serif;
-    font-size: 3vw;
+    font-size: 2vw;
     text-align: center;
-    padding:  20px;
+    padding:  3vh;
 }
 
 .btn-grid {
-    display:inline-block;
+    display:flex;
     gap: 10px;
     margin: 20px 0;
     justify-content: center;
@@ -71,7 +71,7 @@ header {
 .btn {
     background:hsl(var(--hue), 90%, 10%);
     border-radius: 1vh;
-    padding: 2vw;
+    padding: 1vw;
     padding-bottom: 2vh;
     color: rgb(255, 255, 255);
     outline: none;
@@ -89,12 +89,15 @@ header {
 
 .start-btn {
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .next-btn {
-    display: none;
-    margin: 20px auto;
+    display: block;
+    margin: 10px auto;
+    padding: 0;
+    font-size: 1vh;
+    justify-content: center;
 }
 
 .start-btn, .next-btn {
@@ -125,4 +128,29 @@ header {
 .btn {
     display: block;
     margin: 10px auto;
+}
+
+@media screen and (min-width: 400px){
+    .container{
+        height: 90vh;
+        max-height: 60%;
+    }
+
+    .question {
+        font-size: 4vw;
+    }
+
+    .btn-grid {
+        display: inline-block;
+        justify-content:center;
+        margin: 30vw;
+    }
+
+    .btn {
+        display: block;
+        margin: 5px auto;
+        font-size: 2vh;
+        justify-content: center;
+    }
+    
 }
