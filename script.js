@@ -90,8 +90,6 @@ function setNextQuestion(){
     
     resetState();
     showQuestion(questions[currentQuestionIndex]);
-
-    console.log("Current Index:", currentQuestionIndex);
  
     if (currentQuestionIndex === question.length -1) {
         console.log("Show 'Finish button'")
@@ -119,6 +117,7 @@ function clearStatusClass(element) {
 }
 
 function resetState() {
+    nextButton.classList.add('hide');
     while (answerButtonsElement.firstChild){
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
@@ -139,7 +138,7 @@ function selectAnswer(e) {
     }
 }
 
-if (currentQuestionIndex === question.length -1) {
+if (currentQuestionIndex === questions.length -1) {
     nextButton.innerText = "Finish";
 } else {
     nextButton.classList.remove('hide');
