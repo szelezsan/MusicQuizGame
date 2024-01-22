@@ -68,17 +68,16 @@ let currentQuestionIndex;
 let correctAnswer;
 
 /* Starting game, by pressing Start button */
-startButton.addEventListener('click', startGame);
-nextButton.addEventListener('click', () => {
-    currentQuestionIndex++;
-    setNextQuestion();
-})
+startButton.addEventListener('click', startGame)(
+    nextButton.classList.add('hide')
+);
+
 
 function startGame(){
     /* Hiding Start button after starting the game */
     startButton.classList.add("hide");
 
-    nextButton.classList.add('hide')
+    nextButton.classList.add('hide');
     
     questionContainer.classList.remove("hide");
     currentQuestionIndex= 0;
@@ -108,6 +107,7 @@ function showQuestion(question) {
 
         button.addEventListener("click", selectAnswer);
         answerButtonsElement.appendChild(button);
+
     });
 }
 
@@ -132,6 +132,7 @@ function selectAnswer(e) {
         selectedButton.classList.add("correct");
         correctAnswer++;
         nextButton.classList.remove("hide");
+        nextButton.addEventListener(setNextQuestion);
     }else {
         selectedButton.classList.add('wrong');
         nextButton.classList.add('hide');
