@@ -86,8 +86,9 @@ When the user cliscks on any answer, it will provide an instant feedback: if ans
 
 I used website wireframe.cc to create a wireframes.
 
-![Wireframes](md_images/wireframes.png)
-
+![Wireframes](readmephotos/wireframe/Screenshot 2024-01-25 at 13.23.24.png)
+![Wireframes](readmephotos/wireframe/Screenshot 2024-01-25 at 13.24.13.png)
+![Wireframes](readmephotos/wireframe/Screenshot 2024-01-25 at 13.26.17.png)
 ## Surface
 
 ### Colors
