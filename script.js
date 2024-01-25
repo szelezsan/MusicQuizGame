@@ -168,7 +168,7 @@ function showScore() {
     resetState();
     nextButton.classList.remove('hide');
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
-    nextButton.innerHTML ="Start over";
+    nextButton.innerHTML ="Try again";
     nextButton.style.display= 'block';
 
 
