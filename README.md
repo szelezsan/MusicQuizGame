@@ -117,22 +117,13 @@ Main colours used in a project:
 ___
 # Features
 
-The website consists of 6 pages. Four are accessible from a navigation menu.
-One is a 404 error page and one is a submission confirmation page for a form.
+The page has good contrast between colors for easy readability, and all naviation buttas are straight forward.
 
 The website has below features:
 
-## Navigation bar
+## Start button
 
-* #### Navigation bar is visible on the top of each website. It is responsive and will adapt to mobile devices by a change into a burger menu.
-* Navigation scheme:
-
-    * On left side there is a logo. It can be used as navigation link to the main page.
-    * On right side there are four links or burger menu. It contains:
-        * Home
-        * About me
-        * Offer
-        * Contact
+* #### Start button is located in the middle of the container.
 
 ## Timetable
 

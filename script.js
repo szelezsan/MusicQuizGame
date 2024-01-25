@@ -60,12 +60,9 @@ const nextButton =document.getElementById('next-btn');
 const questionContainer= document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement= document.getElementById('answer-buttons');
-const finishButtonElement = document.getElementById('finish-btn')
-
 
 let currentQuestionIndex;
 let correctAnswer;
-let answer;
 let score= 0;
 
 /* Starting game, by pressing Start button */
