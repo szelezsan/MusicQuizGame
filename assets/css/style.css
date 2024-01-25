@@ -109,6 +109,7 @@ header {
     background:hsl(var(--hue), 90%, 10%);
     border-radius: 2vh;
     padding: 2vw;
+    margin-top: 7vh;
     color: rgb(255, 255, 255);
     outline: none;
     font-family: 'Playfair Display', serif;
