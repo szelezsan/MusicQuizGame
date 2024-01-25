@@ -1,12 +1,13 @@
-# QuizGame
+# MusicQuizGame
 
 ## Javascript Essentials
 
-![Mockup](md_images/mockup.png)
+![Mockup](/readmephotos/readmephotos/Screenshot 2024-01-25 at 12.20.33.png)
 
 This is a simple browser based trivia quiz game. There are a set of 10 music related questions, with a set of 3 answers, but only one is correct.
 The design is clear and simple, easy to navigate with the implemented start and next buttons.
 
+The game is fully responsible on multiple devices.
 
 ## [View life website in github pages](https://szelezsan.github.io/QuizGame/)
 ---
@@ -14,7 +15,7 @@ The design is clear and simple, easy to navigate with the implemented start and 
 # Table of contents
 
 - [UX](#ux)
-    - [Website owner business goals](#website-owner-business-goals)
+    - [Website owner goals](#website-owner-business-goals)
     - [User goals](#user-goals)
         - [New user goals](#new-user-goals)
         - [Returning user goals](#returning-user-goals)
@@ -39,12 +40,14 @@ The design is clear and simple, easy to navigate with the implemented start and 
 
 # UX
 
-## Website owner business goals
+## Website owner goals
 
-The main reason to create this website is to help present a fitness instructor to the public.
-Page owner can present herself, her professional development path, achievements and top skills.
-Also this website is the best place to show types of fitness classes, personal training and diet coaching descriptions.
-And at the end owner will be able to present an offer with available packages and prices.
+This project was created for Code Institude's Full Stack Software Developer course/ Portfolio Project 2.
+The Music Quiz Game presents 10 questions with 3 potential answers. For all questions, there is only one correct answer.
+
+At the end of the game, the player's score will be visible.
+
+![Mockup](readmephotos/scorescr.png)
 
 ## User goals
 

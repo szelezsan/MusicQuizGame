@@ -187,4 +187,3 @@ function handleNextButton(){
 
 startGame();
 
-
