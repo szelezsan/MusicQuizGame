@@ -94,18 +94,23 @@ I used website wireframe.cc to create a wireframes.
 
 ### Colors
 Main colours used in a project:
-* background color: #ccddff
-* font color: #6217ee
-* link color: #ff6600
-* hoover color: #ff9000
+* background color, header color:  --hue-neutral: 900;
+* font color:  rgb(0, 0, 0);
+* wrong answer color: --hue-wrong: 0;
+* correct answer color: --hue-correct: 145;
+* answer/start/next button font color:  rgb(255, 255, 255);
+
+
 
 ### Fonts 
 
-* As a main font I used Almarai, and as a backup font sans-serif
+* Body font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* Header font: 'Titan One', sans-serif;
+
 
 ### Images
 
-* I used images from [Unspalsh.com](www.unsplash.com) and there are credited in [credits](#credits) section.
+* No images were used in the project.
 
 
 [Back to Table of contents](#table-of-contents)
