@@ -71,7 +71,16 @@ At the end of the game, the player's score will be visible.
 
 ## Structure of the website
 
-The website is designed to be easy and user-friendy on all type of devices. On desktop, tablet or mobile device there should be no difference for a user to have a fantastic experience. All parts are designed to achieve maximum user satisfaction. User will get some interaction from the interface as links and buttons will have a hover effects.
+The Music Game Quiz's main page includes the header and a start button for easy navigation.
+![Mockup](readmephotos/startbtn.png)
+
+The next pages have unifrom layouts: A header, a question and 3 answers are displayed.
+![Mockup](readmephotos/qapage.png)
+
+When the user cliscks on any answer, it will provide an instant feedback: if answer correct, the button turns green, if wrong button turns red. Also after clicking on any answer button the "Next button" will appear, and users can move onto the next question.
+![Mockup](readmephotos/correctanswer.png)
+![Mockup](readmephotos/wronganswer.png)
+
 
 ## Wireframes
 
