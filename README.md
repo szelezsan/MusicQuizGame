@@ -77,7 +77,7 @@ The Music Game Quiz's main page includes the header and a start button for easy 
 The next pages have unifrom layouts: A header, a question and 3 answers are displayed.
 ![Mockup](/readmephotos/gamescrshots/qapage.png)
 
-When the user cliscks on any answer, it will provide an instant feedback: if answer correct, the button turns green, if wrong button turns red. Also after clicking on any answer button the "Next button" will appear, and users can move onto the next question.
+When the user clicks on any answer, it will provide an instant feedback: if answer correct, the button turns green, if wrong button turns red. Also after clicking on any answer button the "Next button" will appear, and users can move onto the next question.
 ![Mockup](/readmephotos/gamescrshots/correctanswer.png)
 ![Mockup](/readmephotos/gamescrshots/wronganswer.png)
 

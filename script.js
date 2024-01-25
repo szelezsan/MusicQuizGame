@@ -168,6 +168,9 @@ function showScore() {
     nextButton.innerHTML ="Try again";
     nextButton.style.display= 'block';
 
+    nextButton.style.display = "block";
+    nextButton.addEventListener("click", startGame);
+
 
 }
 
