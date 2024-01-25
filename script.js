@@ -54,18 +54,19 @@ const questions = [
     },
 ]
 
-/* Starting game */
+/* Setting values */
 const startButton = document.getElementById('start-btn');
 const nextButton =document.getElementById('next-btn'); 
 const questionContainer= document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement= document.getElementById('answer-buttons');
+const finishButtonElement = document.getElementById('finish-btn')
 
 
-
-/* Shuffling question, so they will be presented in different orders each time */
 let currentQuestionIndex;
 let correctAnswer;
+let answer;
+let score= 0;
 
 /* Starting game, by pressing Start button */
 startButton.addEventListener('click', startGame)(
@@ -82,6 +83,8 @@ function startGame(){
     questionContainer.classList.remove("hide");
     currentQuestionIndex= 0;
     correctAnswer = 0;
+    score= 0;
+    console.log("startGame")
     setNextQuestion();
 }
 
@@ -90,24 +93,27 @@ function setNextQuestion(){
     resetState();
     showQuestion(questions[currentQuestionIndex]);
  
-    if (currentQuestionIndex === question.length -1) {
-        console.log("Show 'Finish button'")
-    nextButton.innerText ="Finish"
+    if (currentQuestionIndex === questions.length -1) {
+       finishButton.getElementById.remove('hide');
     }
 }
 
 
 function showQuestion(question) {
-    questionElement.innerText = question.question;
+   console.log("showQuestion")
+   resetState();
+   let currentQuestion = questions[currentQuestionIndex];
+   let questionNo =currentQuestionIndex +1;
+   questionElement.innerHTML = questionNo + "." + currentQuestion.question;
 
-    question.answers.forEach((answer, index ) => {
+    currentQuestion.answers.forEach((answer, index ) => {
         const button= document.createElement('button');
         button.innerText= answer;
         button.classList.add('btn');
 
         button.addEventListener("click", selectAnswer);
         answerButtonsElement.appendChild(button);
-
+        
     });
 }
 
@@ -122,6 +128,14 @@ function resetState() {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
+Array.from(answerButtonsElement.children).forEach((button) =>{
+    button.disabled =true;
+    if (button.classList.contains('correct')){
+        button.style.backgroundColor = "green";
+    } else {
+        button.style.backgroundColor = 'red';
+    }
+});
 
 function selectAnswer(e) {
     const selectedButton= e.target
@@ -131,26 +145,46 @@ function selectAnswer(e) {
     if (selectedAnswer ===question.correctAnswer) {
         selectedButton.classList.add("correct");
         correctAnswer++;
+        score++;
+        console.log(score);
         nextButton.classList.remove("hide");
-        nextButton.addEventListener(setNextQuestion);
+        
     }else {
         selectedButton.classList.add('wrong');
-        nextButton.classList.add('hide');
+        nextButton.classList.remove('hide');
     }
+
+    nextButton.style.display = "block";
+    nextButton.addEventListener("click", handleNextButton);
 }
 
-if (currentQuestionIndex === questions.length -1) {
-    nextButton.innerText = "Finish";
+if (currentQuestionIndex === questions.length) {
+    finishButton.classList.remove('hide');
 } else {
     nextButton.classList.remove('hide');
 }
 
+function showScore() {
+    resetState();
+    nextButton.classList.remove('hide');
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML ="Start over";
+    nextButton.style.display= 'block';
 
-Array.from(answerButtonsElement.children).forEach((button) =>{
-    button.disabled =true;
-    if (button.classList.contains('correct')){
-        button.style.backgroundColor = "green";
+
+}
+
+function handleNextButton(){
+    nextButton.removeEventListener("click", handleNextButton);
+    console.log("nextbutton");
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length){
+        showQuestion();
     } else {
-        button.style.backgroundColor = 'red';
+        showScore()
     }
-});
+}
+
+startGame();
+
+
