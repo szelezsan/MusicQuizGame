@@ -52,33 +52,22 @@ At the end of the game, the player's score will be visible.
 ## User goals
 
 ### New user goals:
-- user is able to find information about professional fitness trainer.
-- user can easily locate class description, personal training sessions description and diet coaching sessions description.
-- find location of the place and contact information.
+- The game is an intermediate level game, therefore it can be a little bit challenging for some people. This way the game is more interesting, and user won't be bored going through the quiz questions.
+- Users can easily navigate thoughout the game, with the clear, uniform design.
+- The game provides feedback with a score message at the end of the game.
 
-### Returning user goals:
-- user can learn more about instructor.
-- user is able to find timetable.
-- user can send a message to the instructor using a contact form.
 
 ## User stories
 
-### As a business owner:
-* I would like to present myself and my offer on the website clearly to potential customers.
-* I need to make sure that my current and new customers will find a professional help with their diets, personal or group trainings.
-* I want my customers to be able to learn how to use my website intuitively and easily.
-* I would like to build and maintain relationship with potential and current customers.
-
 ### As a new customer:
-* I wish to find information about personal trainer and check her/his qualifications.
-* I would like to contact with a diet coach to change my eating habits and start healthy lifestyle. 
-* I want to join in a fitness group with professional trainer, to find motivation and spend time actively.
+* I wish to provide an entertaining game.
+* I would the user have an excellent user experience, and an easy to use surface.
+* I would like the users to be given the chance to get all questions right. At the end of the game they can start over the Music Quiz Game.
 
 ### As a returning customer:
 
-* I need to contact my diet coach to reschedule my meeting.
-* I would like to check timetable for current days and times for a group trainings.
-* I want to show my friend a location of the fitness studio where we can join for a semi private personal training.
+* If users are unhappy with their quiz score, they can start the quiz again for better results.
+* The uniform platform provides returning customers and easy navigation and excellent user experience.
 
 ## Structure of the website
 
