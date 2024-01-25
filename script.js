@@ -60,6 +60,7 @@ const nextButton =document.getElementById('next-btn');
 const questionContainer= document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement= document.getElementById('answer-buttons');
+const finishButtonElement= document.getElementById('finish-btn');
 
 let currentQuestionIndex;
 let correctAnswer;
@@ -171,7 +172,6 @@ function showScore() {
     nextButton.style.display = "block";
     nextButton.addEventListener("click", startGame);
 
-
 }
 
 function handleNextButton(){
@@ -186,4 +186,5 @@ function handleNextButton(){
 }
 
 startGame();
+
 
