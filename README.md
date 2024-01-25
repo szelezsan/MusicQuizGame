@@ -2,7 +2,7 @@
 
 ## Javascript Essentials
 
-![Mockup](readmephotos/readmephotos/Screenshot 2024-01-25 at 12.20.33.png)
+![Mockup](/readmephotos/mockup.png)
 
 This is a simple browser based trivia quiz game. There are a set of 10 music related questions, with a set of 3 answers, but only one is correct.
 The design is clear and simple, easy to navigate with the implemented start and next buttons.
@@ -47,7 +47,7 @@ The Music Quiz Game presents 10 questions with 3 potential answers. For all ques
 
 At the end of the game, the player's score will be visible.
 
-![Mockup](readmephotos/scorescr.png)
+![Mockup](/readmephotos/gamescrshots/scorescr.png)
 
 ## User goals
 
