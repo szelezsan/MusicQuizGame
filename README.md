@@ -72,23 +72,24 @@ At the end of the game, the player's score will be visible.
 ## Structure of the website
 
 The Music Game Quiz's main page includes the header and a start button for easy navigation.
-![Mockup](readmephotos/startbtn.png)
+![Mockup](/readmephotos/gamescrshots/startbtn.png)
 
 The next pages have unifrom layouts: A header, a question and 3 answers are displayed.
-![Mockup](readmephotos/qapage.png)
+![Mockup](/readmephotos/gamescrshots/qapage.png)
 
 When the user cliscks on any answer, it will provide an instant feedback: if answer correct, the button turns green, if wrong button turns red. Also after clicking on any answer button the "Next button" will appear, and users can move onto the next question.
-![Mockup](readmephotos/correctanswer.png)
-![Mockup](readmephotos/wronganswer.png)
+![Mockup](/readmephotos/gamescrshots/correctanswer.png)
+![Mockup](/readmephotos/gamescrshots/wronganswer.png)
 
 
 ## Wireframes
 
 I used website wireframe.cc to create a wireframes.
 
-![Wireframes](readmephotos/wireframe/Screenshot 2024-01-25 at 13.23.24.png)
-![Wireframes](readmephotos/wireframe/Screenshot 2024-01-25 at 13.24.13.png)
-![Wireframes](readmephotos/wireframe/Screenshot 2024-01-25 at 13.26.17.png)
+![Wireframes](/readmephotos/wireframe/start.png)
+![Wireframes](/readmephotos/wireframe/qapage.png)
+![Wireframes](/readmephotos/wireframe/endofgame.png)
+
 ## Surface
 
 ### Colors
