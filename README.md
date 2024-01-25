@@ -9,7 +9,7 @@ The design is clear and simple, easy to navigate with the implemented start and 
 
 The game is fully responsible on multiple devices.
 
-## [View life website in github pages](https://github.com/szelezsan/MusicQuizGame)
+## [View life website in github pages](https://szelezsan.github.io/MusicQuizGame/)
 ---
 
 # Table of contents
