@@ -4,7 +4,7 @@
 const questions = [
     {
         question: 'What is the best selling album of all time from 1976 to 2018?',
-        answers: ['Thrillers', 'Back in Black', 'Abbey Road'],
+        answers: ['Thriller', 'Back in Black', 'Abbey Road'],
         correctAnswer: 0
     },
     {
@@ -40,7 +40,7 @@ const questions = [
     {
         question: 'From which country did the song "Gangnam Style" originate from?',
         answers: ['South Korea', 'North Korea', 'China'],
-        correctAnswer:1
+        correctAnswer:0
     },
     {
         question: 'Which 80s band is fronted by singer/guitarist Robert Smith?',
@@ -55,7 +55,7 @@ const questions = [
 ]
 
 /* Setting values */
-const startButton = document.getElementById('start-btn');
+const startButton = document.getElementById('start-btn');sds
 const nextButton =document.getElementById('next-btn'); 
 const questionContainer= document.getElementById('question-container');
 const questionElement = document.getElementById('question');
@@ -71,7 +71,6 @@ startButton.addEventListener('click', startGame)(
     nextButton.classList.add('hide')
 );
 
-
 function startGame(){
     /* Hiding Start button after starting the game */
     startButton.classList.add("hide");
@@ -86,14 +85,10 @@ function startGame(){
     setNextQuestion();
 }
 
+
 function setNextQuestion(){
-    
     resetState();
     showQuestion(questions[currentQuestionIndex]);
- 
-    if (currentQuestionIndex === questions.length -1) {
-       finishButton.getElementById.remove('hide');
-    }
 }
 
 
@@ -157,22 +152,20 @@ function selectAnswer(e) {
 }
 
 if (currentQuestionIndex === questions.length) {
-    finishButton.classList.remove('hide');
+    finishButtonElement.classList.remove('hide');
 } else {
     nextButton.classList.remove('hide');
 }
 
 function showScore() {
     resetState();
-    nextButton.classList.remove('hide');
+    finishButtonElement.classList.remove('hide');
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
-    nextButton.innerHTML ="Try again";
-    nextButton.style.display= 'block';
+    
 
-    nextButton.style.display = "block";
-    nextButton.addEventListener("click", startGame);
-
-}
+    finishButtonElement.style.display = "block";
+    finishButtonElement.addEventListener("click", startGame);
+} 
 
 function handleNextButton(){
     nextButton.removeEventListener("click", handleNextButton);

@@ -62,7 +62,7 @@ header {
 
 .btn-grid {
     display:flex;
-    gap: 10px;
+    gap: auto 10px;
     justify-content: center;
 }
 
@@ -104,6 +104,7 @@ header {
     justify-content:center;
     padding-bottom: 2vh;
 }
+
 
 .start-btn {
     background:hsl(var(--hue), 90%, 10%);
