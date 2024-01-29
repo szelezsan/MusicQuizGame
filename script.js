@@ -74,6 +74,8 @@ startButton.addEventListener('click', startGame)(
 function startGame(){
     /* Hiding Start button after starting the game */
     startButton.classList.add("hide");
+    
+    finishButtonElement.classList.add('hide');
 
     nextButton.classList.add('hide');
     
