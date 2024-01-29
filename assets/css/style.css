@@ -120,6 +120,23 @@ header {
 }
 
 
+.finish-btn {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 1vh;
+    text-align: center;
+    background:hsl(var(--hue), 90%, 10%);
+    border-radius: 2vh;
+    padding: 1vw;
+    color: rgb(255, 255, 255);
+    outline: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 2vw;
+    justify-content:center;
+    padding-bottom: 2vh;
+}
+
 .controls {
     display:flex;
     justify-content: center;

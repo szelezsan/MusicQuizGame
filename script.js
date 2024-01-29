@@ -55,7 +55,7 @@ const questions = [
 ]
 
 /* Setting values */
-const startButton = document.getElementById('start-btn');sds
+const startButton = document.getElementById('start-btn');
 const nextButton =document.getElementById('next-btn'); 
 const questionContainer= document.getElementById('question-container');
 const questionElement = document.getElementById('question');
