@@ -123,20 +123,14 @@ function resetState() {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
-Array.from(answerButtonsElement.children).forEach((button) =>{
-    button.disabled =true;
-    if (button.classList.contains('correct')){
-        button.style.backgroundColor = "green";
-    } else {
-        button.style.backgroundColor = 'red';
-    }
-});
+
 
 function selectAnswer(e) {
     const selectedButton= e.target
     const selectedAnswer= Array.from(answerButtonsElement.children).indexOf(selectedButton);
 
     const question= questions[currentQuestionIndex];
+    
     if (selectedAnswer ===question.correctAnswer) {
         selectedButton.classList.add("correct");
         correctAnswer++;
@@ -149,9 +143,12 @@ function selectAnswer(e) {
         nextButton.classList.remove('hide');
     }
 
+    
+
     nextButton.style.display = "block";
     nextButton.addEventListener("click", handleNextButton);
 }
+
 
 if (currentQuestionIndex === questions.length) {
     finishButtonElement.classList.remove('hide');

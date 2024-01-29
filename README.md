@@ -123,52 +123,31 @@ The website has below features:
 
 ## Start button
 
-* #### Start button is located in the middle of the container.
+* Start button is located in the middle of the container.
 
-## Timetable
+## Next Button
 
-* Each site has a timetable on the bottom. Customers can find classes times here.
+* The Next button only appears visible, when any answer has been chosen. This button provides an option to go ahead to the next question and carry on with the game.
 
-## Footer
+## Answer buttons
 
-* Footer is consistent on all pages. It has contact details on left side and social links on right side.
-Each link will open in a separate tab in a browser.
+* During the quiz the user is povided with 3 answers, one correct and two uncorrect one. When any of the answer buttons will be clicked the 'Next' button will show.
 
-## Home
+## Header
 
-* ### Portfolio section
+* The header with the name of the quiz(Music Quiz Game) is always presented and visible.
 
-    * Portfolio includes an image on the left side and profession information on the right side.
-This section is consistent on all pages.
+## Questions
 
-* ### Career path section
+* Each time a question in answered the 'Next' button shows, and sets the next question.
+There is a set of 10 questions all together. Eah time the 'Next button is clicked a new set of question is displayed.
 
-    * Career path section contains top achievements and career  points. It is presented as a timeline.
-
-* ### Packages section
-
-    * This part has three packages to choose for a customers. All buttons are linked to offer site.
-
-## About me
-
-* About me gives information about Annie's life and her professional background.
-
-## Offer
-
-* This site provide packages description to customers.
-Here they can find more information and choose interesting offer.
-
-## Contact
-
-* Contact form is a main part on this site. User can contact by filling a form with interesting topic.
-Below a form there is a map with location of a fitness studio.
 
 ##  Future implementations
 
-* Create diet coach offer.
-* Add new site with class descriptions.
-* A blog site with fitness advises.
-* Login site for paid content including videos, meals ideas and recipes.
+* Instruction page
+* Adding sound when answers are chosen
+* Add more questions\answeres.
 
 
 [Back to Table of contents](#table-of-contents)
@@ -180,9 +159,6 @@ ___
 
 ### CSS
 * As a style language.
-
-### Bootstrap 
-* Bootstrap@4.5.3 as a CSS framework to keep responsive, mobile first aproach.
 
 ### Font Awesome
 * As an icon library for a social links.
@@ -196,14 +172,11 @@ ___
 ### Git
 * As a version-control system tracking.
 
-### Gitpod
+### Gitpod/VsCode
 * As a development hosting platform.
 
 ### Wireframe.cc
 * As a wireframing tool.
-
-### GNU Image Manipulation Program [GIMP]
-* As an image editor.
 
 
 [Back to Table of contents](#table-of-contents)
@@ -219,25 +192,10 @@ ___
 ## Compatibility testing
  Site was tested across multiple virtual mobile devices and browsers. I checked all supported devices in both Mozilla web developer tools and Chrome developer tools. 
  
- I tested on hardware devices such as: Lenovo ideapad with Ubuntu and Windows OS's, Lenovo smartphone with Android 7, Google pixel 3 with Android 11.
+ I tested on hardware devices such as: MAcbook air 13", Ipad, Iphone 11Pro, and ...
 
 
 ## User stories testing
-
-### As a business owner:
-
-- I would like to present myself and my offer on the website clearly to potential customers.
-    > Name, photo of the instructor and top skills are on each page in portfolio section. Career path section at home page provides more details.
-
-- I need to make sure that my current and new customers will find a professional help with their diets, personal or group trainings.
-    > Customers can achieve this by contacting through contact form. They can choose interesting topic and describe their needs in a message box.
-
-- I want my customers to be able to learn how to use my website intuitively and easily.
-    > Each site has a fixed navigation menu and is accessible at all times. All content is presented with minimalistic approach.
-
-- I would like to build and maintain relationship with potential and current customers.
-    > Customers are able to find a links to social channels at the bottom of each page. Alternatively they can contact by email or contact form.
-
 
 ### As a new customer:
 - wish to find information about personal trainer and check her/his qualifications.
