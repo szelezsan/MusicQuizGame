@@ -67,17 +67,22 @@ let correctAnswer;
 let score= 0;
 
 /* Starting game, by pressing Start button */
-startButton.addEventListener('click', startGame)(
-    nextButton.classList.add('hide')
-);
+startButton.addEventListener('click', startGame)
+// (
+//     nextButton.classList.add('hide'),
+//     console.log('IN START BUTTON FUNCTION')
+// );
+
+nextButton.style.display = "none";
 
 function startGame(){
-    /* Hiding Start button after starting the game */
+
     startButton.classList.add("hide");
     
     finishButtonElement.classList.add('hide');
 
-    nextButton.classList.add('hide');
+    nextButton.style.display = "block";
+    // nextButton.classList.add('hide');
     
     questionContainer.classList.remove("hide");
     currentQuestionIndex= 0;
@@ -177,6 +182,6 @@ function handleNextButton(){
     }
 }
 
-startGame();
+// startGame();
 
 
