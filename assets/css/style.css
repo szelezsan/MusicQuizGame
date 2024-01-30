@@ -203,14 +203,15 @@ footer:hover {
         display: block;
         justify-content:center;
         text-align: center;
-        padding: 3vw;
+        padding: 2vw;
     }
 
-    .start-btn,{
+    .start-btn {
         font-size: 7vw;
         display: inline-block;
         justify-content:space-evenly;
-        padding: 7vw;
+        padding: 4vw;
+        margin-top: 10vh;
     }
 
     .next-btn {
