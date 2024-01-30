@@ -190,9 +190,8 @@ footer:hover {
 /* Mobile styling */
 @media screen and (min-width:300px) and (max-width:600px) {
     .container{
-        height: 90vh;
-        max-height: 60%;
-        margin: 2vw;
+        height: 80vh;
+        max-height: 70%;
     }
 
     .question {
@@ -204,6 +203,7 @@ footer:hover {
         display: block;
         justify-content:center;
         text-align: center;
+        padding: 3vw;
     }
 
     .start-btn,{
