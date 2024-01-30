@@ -196,7 +196,7 @@ footer:hover {
     }
 
     .question {
-        font-size:6vw;
+        font-size:5vw;
         font-weight: 300;
 
     }
@@ -216,9 +216,9 @@ footer:hover {
 
     .btn {
         display: block;
-        font-size: 3vh;
+        font-size: 2vh;
         justify-content: center;
-        padding:2px;
+        padding:3px;
     }
     
     header {
