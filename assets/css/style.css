@@ -190,12 +190,12 @@ footer:hover {
 /* Mobile styling */
 @media screen and (min-width:300px) and (max-width:600px) {
     .container{
-        height: 80vh;
-        max-height: 70%;
+        height: 100vh;
+        max-height: 80%;
     }
 
     .question {
-        font-size:5vw;
+        font-size:6vw;
         font-weight: 300;
     }
 
@@ -203,8 +203,6 @@ footer:hover {
         display: block;
         justify-content:center;
         text-align: center;
-        padding: 1vw;
-        font-size: 2vw;
     }
 
     .start-btn {
@@ -226,12 +224,12 @@ footer:hover {
         display: block;
         font-size: 3vh;
         justify-content: center;
-        padding:3vw;
+        padding:2px;
     }
     
     header {
         padding-bottom: 0;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .footer {
