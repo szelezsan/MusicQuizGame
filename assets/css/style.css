@@ -192,6 +192,7 @@ footer:hover {
     .container{
         height: 90vh;
         max-height: 60%;
+        margin: 1vw;
     }
 
     .question {
