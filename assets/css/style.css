@@ -63,7 +63,6 @@ header {
 
 .btn-grid {
     display:flex;
-    gap: auto 10px;
     justify-content: center;
     margin-top: 3vh;
 }
@@ -191,8 +190,8 @@ footer:hover {
 /* Mobile styling */
 @media screen and (min-width:300px) and (max-width:600px) {
     .container{
-        height: 100vh;
-        max-height: 80%;
+        height: 90vh;
+        max-height: 60%;
     }
 
     .question {
@@ -204,7 +203,6 @@ footer:hover {
     .btn-grid {
         display: block;
         justify-content:center;
-  
         text-align: center;
     }
 

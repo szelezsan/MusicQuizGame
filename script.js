@@ -68,21 +68,15 @@ let score= 0;
 
 /* Starting game, by pressing Start button */
 startButton.addEventListener('click', startGame)
-// (
-//     nextButton.classList.add('hide'),
-//     console.log('IN START BUTTON FUNCTION')
-// );
 
 nextButton.style.display = "none";
 
+/* Starting quiz game */
 function startGame(){
-
+    /* Hiding buttons */
     startButton.classList.add("hide");
     
     finishButtonElement.classList.add('hide');
-
-    // nextButton.style.display = "block";
-    // nextButton.classList.add('hide');
     
     questionContainer.classList.remove("hide");
     currentQuestionIndex= 0;
@@ -135,7 +129,7 @@ function selectAnswer(e) {
     const selectedAnswer= Array.from(answerButtonsElement.children).indexOf(selectedButton);
 
     const question= questions[currentQuestionIndex];
-    /* Rebecca- tutor support's code */
+    /* Rebecca's- tutor support-code for disabling buttons after fist click */
     const buttons = document.querySelectorAll('.btn');
 
     buttons.forEach(button => {
@@ -192,7 +186,5 @@ function handleNextButton(){
         showScore()
     }
 }
-
-// startGame();
 
 
