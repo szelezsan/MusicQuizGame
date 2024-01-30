@@ -206,7 +206,7 @@ footer:hover {
     }
 
 .controls {
-    max-height: 30%;
+    max-height: 40%;
 }
 
     .start-btn {
@@ -218,6 +218,13 @@ footer:hover {
     }
 
     .next-btn {
+        font-size: 4vw;
+        display: inline-block;
+        justify-content:space-evenly;
+        padding: 3vw;
+    }
+
+    .finish-btn {
         font-size: 4vw;
         display: inline-block;
         justify-content:space-evenly;
