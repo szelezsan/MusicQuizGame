@@ -81,7 +81,7 @@ function startGame(){
     
     finishButtonElement.classList.add('hide');
 
-    nextButton.style.display = "block";
+    // nextButton.style.display = "block";
     // nextButton.classList.add('hide');
     
     questionContainer.classList.remove("hide");
@@ -148,7 +148,7 @@ function selectAnswer(e) {
         nextButton.classList.remove('hide');
     }
 
-    
+    answerButtonsElement.children.disabled = true;
 
     nextButton.style.display = "block";
     nextButton.addEventListener("click", handleNextButton);
