@@ -135,6 +135,19 @@ function selectAnswer(e) {
     const selectedAnswer= Array.from(answerButtonsElement.children).indexOf(selectedButton);
 
     const question= questions[currentQuestionIndex];
+    /* Rebecca- tutor support's code */
+    const buttons = document.querySelectorAll('.btn');
+
+    buttons.forEach(button => {
+        button.disabled = true;
+        console.log('BUTTON: ', button)
+    });
+
+
+    console.log('SELECTED ANSWER: ', selectedAnswer);
+    console.log('ANSWER BTNS: ', answerButtonsElement.children);
+
+    answerButtonsElement.children.disabled = true;
     
     if (selectedAnswer ===question.correctAnswer) {
         selectedButton.classList.add("correct");
@@ -147,8 +160,6 @@ function selectAnswer(e) {
         selectedButton.classList.add('wrong');
         nextButton.classList.remove('hide');
     }
-
-    answerButtonsElement.children.disabled = true;
 
     nextButton.style.display = "block";
     nextButton.addEventListener("click", handleNextButton);
