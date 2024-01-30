@@ -205,9 +205,9 @@ footer:hover {
         text-align: center;
     }
 
-.controls {
-    max-height: 40%;
-}
+    .controls {
+    max-height: 50%;
+    }
 
     .start-btn {
         font-size: 7vw;
@@ -229,13 +229,6 @@ footer:hover {
         display: inline-block;
         justify-content:space-evenly;
         padding: 3vw;
-    }
-
-    .btn {
-        display: block;
-        font-size: 3vh;
-        justify-content: center;
-        padding:2px;
     }
     
     header {
