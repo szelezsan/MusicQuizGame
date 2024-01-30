@@ -205,6 +205,10 @@ footer:hover {
         text-align: center;
     }
 
+.controls {
+    max-height: 30%;
+}
+
     .start-btn {
         font-size: 7vw;
         display: inline-block;
