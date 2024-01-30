@@ -203,6 +203,7 @@ footer:hover {
         display: block;
         justify-content:center;
         text-align: center;
+        padding: 2vw;
     }
 
     .controls {
@@ -225,7 +226,7 @@ footer:hover {
     }
 
     .finish-btn {
-        font-size: 4vw;
+        font-size: 6vw;
         display: inline-block;
         justify-content:space-evenly;
         padding: 3vw;
