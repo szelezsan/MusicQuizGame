@@ -192,37 +192,14 @@ ___
 ## Compatibility testing
  Site was tested across multiple virtual mobile devices and browsers. I checked all supported devices in both Mozilla web developer tools and Chrome developer tools. 
  
- I tested on hardware devices such as: MAcbook air 13", Ipad, Iphone 11Pro, and ...
-
-
-## User stories testing
-
-### As a new customer:
-- wish to find information about personal trainer and check her/his qualifications.
-    > User can see essential description on the home page. More information can be find in about page.
-
-- I would like to contact with a diet coach to change my eating habits and start healthy lifestyle.
-    > User can find a contact form in contact page. Alternatively can use an email. Email address if located in a footer the bottom of each page.
-
-- I want to join in a fitness group with professional trainer, to find motivation and spend time actively.
-    > Brief class description of fitness group classes can be find on the home page below career path section. Offer site provides more detailed description. Frome there user can click contact us button and send a message to the traier.
-
-### As a returning customer:
-- I need to contact my diet coach to reschedule my meeting.
-    > User can find a contact form in contact page. Alternatively can use social channels or email.
-
-- I would like to check timetable for current days and times for a group trainings.
-    > Each site has time table at the bottom of the page.
-
-- I want to show my friend a location of the fitness studio where we can join for a semi private personal training.
-    > Each page contains location information in a footer. Users are able to find a location map in contact page.
+ I tested on hardware devices such as: Macbook air 13", Ipad, Iphone 11Pro, and Samsung galaxy S23 ultra.
 
 
 ---
 ## Issues found during site development
 
-* #### Horizontal scrolling bar on the bottom of the screen.
-![testing_issue_1](testing/testing_issue_1.png)
+* #### All answer button are active at all times.
+![testing_issue_1]()
 
 I used [grid markup](https://getbootstrap.com/docs/4.5/components/card/#header-and-footer)
 to create two sepereate collumns. To achieve this I had to use *.row* in first *div* element and *.col-sm-6* in the second *div* element.

@@ -55,6 +55,7 @@ header {
 
 .question {
     font-family: 'Playfair Display', serif;
+    font-weight: 600;
     font-size: 2vw;
     text-align: center;
     padding:  3vh;
@@ -64,6 +65,7 @@ header {
     display:flex;
     gap: auto 10px;
     justify-content: center;
+    margin-top: 3vh;
 }
 
 
@@ -90,7 +92,7 @@ header {
 
 .next-btn {
     display: block;
-    margin: 0;
+    margin-top: 5vh;
     padding: 0;
     font-size: 1vh;
     text-align: center;
@@ -189,40 +191,44 @@ footer:hover {
 /* Mobile styling */
 @media screen and (min-width:300px) and (max-width:600px) {
     .container{
-        height: 90vh;
-        max-height: 60%;
+        height: 100vh;
+        max-height: 80%;
     }
 
     .question {
-        font-size: 3vw;
-        padding-bottom:5px;
+        font-size:6vw;
+        font-weight: 300;
 
     }
 
     .btn-grid {
-        display: inline-block;
+        display: block;
         justify-content:center;
-        margin: 10vw 5vw 5vw 20vw;
+  
         text-align: center;
     }
 
-    .start-btn .next-btn {
+    .start-btn, .next-btn {
         font-size: 5vw;
         display: inline-block;
         justify-content:space-evenly;
-        padding: 3vw;
+        padding: 5vw;
     }
 
     .btn {
         display: block;
-        font-size: 2vh;
+        font-size: 3vh;
         justify-content: center;
-        padding:5px;
+        padding:2px;
     }
     
     header {
         padding-bottom: 0;
         font-size: 30px;
+    }
+
+    .footer {
+        font-size: 4vw;
     }
 }
 
