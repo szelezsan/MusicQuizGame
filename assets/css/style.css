@@ -191,14 +191,13 @@ footer:hover {
 @media screen and (min-width:300px) and (max-width:600px) {
     .container{
         height: 90vh;
-        max-height: 90%;
-        margin: 1vw;
+        max-height: 60%;
+        margin: 2vw;
     }
 
     .question {
         font-size:5vw;
         font-weight: 300;
-
     }
 
     .btn-grid {
@@ -208,25 +207,24 @@ footer:hover {
     }
 
     .start-btn,{
-        font-size: 5vw;
+        font-size: 7vw;
         display: inline-block;
         justify-content:space-evenly;
-        padding: 5vw;
-        margin: 5vh;
+        padding: 7vw;
     }
 
     .next-btn {
         font-size: 4vw;
         display: inline-block;
         justify-content:space-evenly;
-        padding: 4vw;
+        padding: 3vw;
     }
 
     .btn {
         display: block;
-        font-size: 2vh;
+        font-size: 4vh;
         justify-content: center;
-        padding:3px;
+        padding:3vw;
     }
     
     header {
