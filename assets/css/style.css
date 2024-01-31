@@ -257,4 +257,8 @@ footer:hover {
     .btn-grid {
         font-size: 3vw;
     }
+
+    .container {
+        min-width: 80%;
+    }
 }
