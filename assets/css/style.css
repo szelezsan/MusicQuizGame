@@ -247,7 +247,7 @@ footer:hover {
 /* Mobile styling-horizontal */
 @media screen and (min-height:300px) and (max-height:600px) {
     .controls {
-        max-height: 30%;
+        max-height: 20%;
     }
 
     .header {
@@ -260,6 +260,6 @@ footer:hover {
 
     .container {
         max-width: 80%;
-        width: 100vw;
+        width: 90vw;
     }
 }
