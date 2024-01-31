@@ -210,10 +210,6 @@ So I reached out to tutor support and Rebecca helped me out to sort the issue.
 
 I adjusted the height of the div for the answer buttons, so the Next button is not being pushed out of the container.
 
-![bug_solutino1](testing/bug_solution1.png)
-
-![bug_solutino2](testing/bug_solution2.png)
-
 ## Performance testing
 
 I run [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check the performance of the website. Screenshots are presented below:

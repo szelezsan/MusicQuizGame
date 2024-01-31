@@ -243,3 +243,11 @@ footer:hover {
     }
 }
 
+/* Mobile styling-horizontal */
+@media screen and (min-height:300px) and (max-height:600px) {
+    .controls {
+        max-height: 30%;
+    }
+
+
+}
