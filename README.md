@@ -199,36 +199,16 @@ ___
 ## Issues found during site development
 
 * #### All answer button are active at all times.
-![testing_issue_1]()
+![testing_issue_1](readmephotos/issues/allbuttonsactive.png)
 
-I used [grid markup](https://getbootstrap.com/docs/4.5/components/card/#header-and-footer)
-to create two sepereate collumns. To achieve this I had to use *.row* in first *div* element and *.col-sm-6* in the second *div* element.
-After that I found that horizontal scrolling bar appear on the bottom of the screen.
-Using mozilla developer tools I noticed that by default class *.row* has *margin-right: -15px;* and *margin-left: -15px;*
+During testing the game I came across a bug, which allowed the user to choose all answers, therefore reach maximum points every time.
+I was trying to solve it many different ways to disable the button, but either the game stopped working, or all button were disabled, and user could not click on them.
 
-To fix this I created new class *.no-row-margin* and set both margins to 0px.
+So I reached out to tutor support and Rebecca helped me out to sort the issue.
 
-> After I gain more experience with bootstrap I found that I could achive this by [no-gutters](https://getbootstrap.com/docs/4.0/layout/grid/#no-gutters) class.
+* #### Next button
 
-> I read bootstrap documentation about [Spacing](https://getbootstrap.com/docs/4.0/utilities/spacing/) and I decided to use predefined classes for paddings and margins in the project.
-By doing this I think my code looks cleaner and will be easier to understand by other developers.
-
-
-* #### Ipad screen compatibility
-
-I found a bugs on Ipad screens. I would like to keep years dates just above the stars, but they were shifted.
-
-![testing_issue_2](testing/testing_ipad_screen.png)
-
-I had to create a block element with a class "ipad-screen" and non-breaking space element inside a block element.
-In CSS file I had to create @media rule that will show this block element on Ipad displays only.
-
->}
-@media screen and (max-width: 991px) and (min-width: 0px),(min-width:1200px){
-    .ipad-screen {
-    display: none;
-}
-}
+I adjusted height of the div for the anser buttons , so the Next button is not being pushed out of the container.
 
 ![bug_solutino1](testing/bug_solution1.png)
 
