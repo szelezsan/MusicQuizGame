@@ -205,6 +205,7 @@ footer:hover {
         justify-content:center;
         text-align: center;
         padding: 2vw;
+        font-size: 3vw;
     }
 
     .controls {
@@ -249,5 +250,11 @@ footer:hover {
         max-height: 30%;
     }
 
+    .header {
+        font-size: 15px;
+    }
 
+    .btn-grid {
+        font-size: 3vw;
+    }
 }
