@@ -4,12 +4,12 @@
 
 ![Mockup](/readmephotos/mockup.png)
 
-This is a simple browser based trivia quiz game. There are a set of 10 music related questions, with a set of 3 answers, but only one is correct.
+This is a simple browser-based trivia quiz game. There are a set of 10 music-related questions, with a set of 3 answers, but only one is correct.
 The design is clear and simple, easy to navigate with the implemented start and next buttons.
 
-The game is fully responsible on multiple devices.
+The game is fully responsible for multiple devices.
 
-## [View life website in github pages](https://szelezsan.github.io/MusicQuizGame/)
+## [View life website in GitHub pages](https://szelezsan.github.io/MusicQuizGame/)
 ---
 
 # Table of contents
@@ -52,8 +52,8 @@ At the end of the game, the player's score will be visible.
 ## User goals
 
 ### New user goals:
-- The game is an intermediate level game, therefore it can be a little bit challenging for some people. This way the game is more interesting, and user won't be bored going through the quiz questions.
-- Users can easily navigate thoughout the game, with the clear, uniform design.
+- The game is an intermediate-level game, therefore it can be a little bit challenging for some people. This way the game is more interesting, and users won't be bored going through the quiz questions.
+- Users can easily navigate throughout the game, with the clear, uniform design.
 - The game provides feedback with a score message at the end of the game.
 
 
@@ -61,8 +61,8 @@ At the end of the game, the player's score will be visible.
 
 ### As a new customer:
 * I wish to provide an entertaining game.
-* I would the user have an excellent user experience, and an easy to use surface.
-* I would like the users to be given the chance to get all questions right. At the end of the game they can start over the Music Quiz Game.
+* I would the user to have an excellent user experience, and an easy-to-use surface.
+* I would like the users to be given the chance to get all questions right. At the end of the game, they can start over the Music Quiz Game.
 
 ### As a returning customer:
 
@@ -71,20 +71,20 @@ At the end of the game, the player's score will be visible.
 
 ## Structure of the website
 
-The Music Game Quiz's main page includes the header and a start button for easy navigation.
+The Music Game Quiz's main page includes a header and a start button for easy navigation.
 ![Mockup](/readmephotos/gamescrshots/startbtn.png)
 
-The next pages have unifrom layouts: A header, a question and 3 answers are displayed.
+The next pages have uniform layouts: A header, a question and 3 answers are displayed.
 ![Mockup](/readmephotos/gamescrshots/qapage.png)
 
-When the user clicks on any answer, it will provide an instant feedback: if answer correct, the button turns green, if wrong button turns red. Also after clicking on any answer button the "Next button" will appear, and users can move onto the next question.
+When the user clicks on any answer, it will provide instant feedback: if the answer is correct, the button turns green, if wrong button turns red. Also after clicking on any answer button the "Next button" will appear, and users can move on to the next question.
 ![Mockup](/readmephotos/gamescrshots/correctanswer.png)
 ![Mockup](/readmephotos/gamescrshots/wronganswer.png)
 
 
 ## Wireframes
 
-I used website wireframe.cc to create a wireframes.
+I used website wireframe.cc to create wireframes.
 
 ![Wireframes](/readmephotos/wireframe/start.png)
 ![Wireframes](/readmephotos/wireframe/qapage.png)
@@ -117,7 +117,7 @@ Main colours used in a project:
 ___
 # Features
 
-The page has good contrast between colors for easy readability, and all naviation buttas are straight forward.
+The page has good contrast between colours for easy readability, and all navigation buttons are straightforward.
 
 The website has below features:
 
@@ -127,11 +127,11 @@ The website has below features:
 
 ## Next Button
 
-* The Next button only appears visible, when any answer has been chosen. This button provides an option to go ahead to the next question and carry on with the game.
+* The Next button only appears visible, when an answer has been chosen. This button provides an option to go ahead to the next question and carry on with the game.
 
 ## Answer buttons
 
-* During the quiz the user is povided with 3 answers, one correct and two uncorrect one. When any of the answer buttons will be clicked the 'Next' button will show.
+* During the quiz the user is provided with 3 answers, one correct and two incorrect ones. When any of the answer buttons are clicked the 'Next' button will show.
 
 ## Header
 
@@ -139,8 +139,8 @@ The website has below features:
 
 ## Questions
 
-* Each time a question in answered the 'Next' button shows, and sets the next question.
-There is a set of 10 questions all together. Eah time the 'Next button is clicked a new set of question is displayed.
+* Each time a question is answered the 'Next' button shows and sets the next question.
+There is a set of 10 questions altogether. Each time the 'Next button is clicked a new set of questions is displayed.
 
 
 ##  Future implementations
@@ -155,19 +155,19 @@ ___
 # Technologies used
 
 ### HTML5
-* As a structure language.
+* As a structured language.
 
 ### CSS
 * As a style language.
 
 ### Font Awesome
-* As an icon library for a social links.
+* As an icon library for social links.
 
 ### Google fonts
 * As a font resource.
 
 ### GitHub
-* As a software hosting platform to keep project in a remote location.
+* As a software hosting platform to keep projects in a remote location.
 
 ### Git
 * As a version-control system tracking.
@@ -190,25 +190,25 @@ ___
 
 
 ## Compatibility testing
- Site was tested across multiple virtual mobile devices and browsers. I checked all supported devices in both Mozilla web developer tools and Chrome developer tools. 
+ The site was tested across multiple virtual mobile devices and browsers. I checked all supported devices in both Mozilla web developer tools and Chrome developer tools. 
  
- I tested on hardware devices such as: Macbook air 13", Ipad, Iphone 11Pro, and Samsung galaxy S23 ultra.
+ I tested on hardware devices such as Macbook Air 13", iPad, iPhone 11Pro, and Samsung Galaxy S23 ultra.
 
 
 ---
 ## Issues found during site development
 
-* #### All answer button are active at all times.
+* #### All answer buttons are active at all times.
 ![testing_issue_1](readmephotos/issues/allbuttonsactive.png)
 
-During testing the game I came across a bug, which allowed the user to choose all answers, therefore reach maximum points every time.
-I was trying to solve it many different ways to disable the button, but either the game stopped working, or all button were disabled, and user could not click on them.
+While testing the game I came across a bug, which allowed the user to choose all answers and, therefore reach maximum points every time.
+I was trying to solve many different ways to disable the button, but either the game stopped working, or all buttons were disabled, and the user could not click on them.
 
 So I reached out to tutor support and Rebecca helped me out to sort the issue.
 
 * #### Next button
 
-I adjusted height of the div for the anser buttons , so the Next button is not being pushed out of the container.
+I adjusted the height of the div for the answer buttons, so the Next button is not being pushed out of the container.
 
 ![bug_solutino1](testing/bug_solution1.png)
 
@@ -216,13 +216,13 @@ I adjusted height of the div for the anser buttons , so the Next button is not b
 
 ## Performance testing
 
-I run [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check performance of the website. Screenshots are presented below:
+I run [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check the performance of the website. Screenshots are presented below:
 
 ![bug_performance1](readmephotos/issues/Performancelighthouse.png)
 ![bug_performance2](readmephotos/issues/Performancelighthouse2.png)
 
 ## Code Validation
-when I finished with my project I validated my code in the following websites:
+when I finished my project I validated my code on the following websites:
  
  * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS
 
@@ -239,23 +239,20 @@ when I finished with my project I validated my code in the following websites:
 ___
 # Deployment
 
-The project was deployed on GitHub Pages. I used Gitpod/VScode as a development environment where I commited all changes to git version control system.
-I used push command in Gitpod to save changes into GitHub.
+The project was deployed on GitHub Pages. I used Gitpod/VScode as a development environment where I committed all changes to the git version control system.
+I used the push command in Gitpod to save changes into GitHub.
 
 To deploy a project I had to:
 
 * Log in to GitHub and click on repository to deploy.
-* Select `Settings` and find GitHub Pages section at the very bottom of the page
+* Select `Settings` and find the GitHub Pages section at the very bottom of the page
 * From source select `none` and then `main` branch.
-* Click `save` and page was deployed after auto-refresh.
+* Click `save` and the page was deployed after auto-refresh.
 >  Your site is published at https://szelezsan.github.io/MusicQuizGame/
 
 [Back to Table of contents](#table-of-contents)
 ___
 # Credits
-
-
-* To complete this project I used Code Institute student template:
 
 ### README template:
 
@@ -268,13 +265,17 @@ https://github.com/marcin-kli/MP1/blob/Milestone-Projects/README.md
     * [css-tricks.com](https://css-tricks.com/)
 
     * [getbootstrap.com/docs](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
-        I used code for navbar, jumbotron and card from Bootstrap.
+        I used code for the navbar, jumbotron and card from Bootstrap.
 
 ### Code
 
 * Links transition: [CSS transition Property](https://www.w3schools.com/cssref/css3_pr_transition.asp)
 * Stackoverflow: [Stack overflow](https://stackoverflow.com/)
-* Tutor help: Rebecca from tutor help helped me with my answer button disabling and to fix an error from the browser.
+* Tutor help: Rebecca from Tutor Help helped me with my answer button disabling and fixing an error from the browser.
+
+### Grammar check
+
+* Grammarly: [Grammarly](https://app.grammarly.com/ddocs/1860249529)
 
 ### Content:
 *  Answer-question content:  [opentdb](https://opentdb.com/api_config.php)
