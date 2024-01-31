@@ -216,23 +216,22 @@ I adjusted height of the div for the anser buttons , so the Next button is not b
 
 ## Performance testing
 
-I run [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check performance of the website.
-I had to do couple of changes to improve performance. Screenshots are presented below:
+I run [Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool to check performance of the website. Screenshots are presented below:
 
-![bug_performance1](testing/performance1.png)
-![bug_performance2](testing/performance2.png)
-
-Final results:
-![performance_final](testing/performance_final.png)
-I noticed that this tests scores vary from time to time and depends on external libraries as well. 
-
-
+![bug_performance1](readmephotos/issues/Performancelighthouse.png)
+![bug_performance2](readmephotos/issues/Performancelighthouse2.png)
 
 ## Code Validation
- At the and of the project I used two websites to validate a code
+when I finished with my project I validated my code in the following websites:
  
  * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS
+
+![cssvalidator](readmephotos/Validator/1cssvalidator.png)
+![cssvalidator]()readmephotos/Validator/2cssvalidator.png
+
  * [Nu Html Checker](https://validator.w3.org/) to test HTML
+
+ ![htmlvalidator](readmephotos/Validator/htmlvalidator.png)
 
 
 [Back to Table of contents](#table-of-contents)
@@ -240,32 +239,27 @@ I noticed that this tests scores vary from time to time and depends on external 
 ___
 # Deployment
 
-The project was deployed on GitHub Pages. I used Gitpod as a development environment where I commited all changes to git version control system.
+The project was deployed on GitHub Pages. I used Gitpod/VScode as a development environment where I commited all changes to git version control system.
 I used push command in Gitpod to save changes into GitHub.
 
 To deploy a project I had to:
 
-* Log in to GitHub and click on repository to deploy ([MP1](https://github.com/marcin-kli/MP1))
-* select `Settings` and find GitHub Pages section at the very bottom of the page
-* from source select `none` and then `Milestone-Projects` branch.
-* click `save` and page was deployed after auto-refresh.
->  Your site is published at https://marcin-kli.github.io/MP1/
-
-To run localy:
-* Log in to GitHub and click on repository to download ([MP1](https://github.com/marcin-kli/MP1))
-* select `Code` and click Download the ZIP file.
-* after download you can extract the file and use it in your local environment 
-
-Alternatively you can [Clone](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
-or [Fork](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
-this repository ([MP1](https://github.com/marcin-kli/MP1)) into your github account.
+* Log in to GitHub and click on repository to deploy.
+* Select `Settings` and find GitHub Pages section at the very bottom of the page
+* From source select `none` and then `main` branch.
+* Click `save` and page was deployed after auto-refresh.
+>  Your site is published at https://szelezsan.github.io/MusicQuizGame/
 
 [Back to Table of contents](#table-of-contents)
 ___
 # Credits
 
 
-* To complete this project I used Code Institute student template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
+* To complete this project I used Code Institute student template:
+
+### README template:
+
+https://github.com/marcin-kli/MP1/blob/Milestone-Projects/README.md
 
 * Ideas and knowledge library:
 
@@ -279,39 +273,11 @@ ___
 ### Code
 
 * Links transition: [CSS transition Property](https://www.w3schools.com/cssref/css3_pr_transition.asp)
-* Bootstrap: [Kitchen sink](https://getbootstrap.com/docs/4.0/components/card/#kitchen-sink)
-* Bootstrap: [Burger menu](https://getbootstrap.com/docs/4.5/components/navbar/#text)
-* Bootstrap: [Jumbotron](https://getbootstrap.com/docs/4.5/components/jumbotron/)
-* Bootstrap: [Form](https://getbootstrap.com/docs/4.5/components/forms/)
+* Stackoverflow: [Stack overflow](https://stackoverflow.com/)
+* Tutor help: Rebecca from tutor help helped me with my answer button disabling and to fix an error from the browser.
+
 ### Content:
-*  General content:  [fitlife.ie](http://fitlife.ie/lessons-its-your-life-your-fit-life/)
-
-### Map location:
-* [fitlife.ie](http://fitlife.ie/)
-
-### Map:
-* [Google maps](https://www.google.com/maps?ll=52.059441,-9.511501&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=7306226195280410511)
-
-### Images:
-
-#### Unsplash.com:
-* [annie-spratt--l-eemJU0vE-unsplash.jpg](https://unsplash.com/photos/-l-eemJU0vE)
-
-* [ziphaus-SZ40Lbw1P5o-unsplash.jpg](https://unsplash.com/photos/SZ40Lbw1P5o)
-
-* [bruce-mars-y0SMHt74yqc-unsplash.jpg](https://unsplash.com/photos/y0SMHt74yqc)
-
-* [luis-quintero-EPrjIYQrpkU-unsplash.jpg](https://unsplash.com/photos/EPrjIYQrpkU)
-
-* [sven-scheuermeier-saGbrA6s8g0-unsplash.jpg](https://unsplash.com/photos/saGbrA6s8g0)
+*  Answer-question content:  [opentdb](https://opentdb.com/api_config.php)
 
 
 [Back to Table of contents](#table-of-contents)
-___
-
-# Screenshots
-
-## Project screenshots
-
-
-Q&A : https://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=multiple
